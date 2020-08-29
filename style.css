@@ -9,7 +9,8 @@ body {
   background-color: gray;
 }
 
-.wrapper {
+.wrapperMain,
+.wrapperFooter {
   margin: 0 10%;
 }
 
@@ -27,16 +28,23 @@ body {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
   min-height: 720px;
   margin: 0;
   padding: 0;
 
+  background-color: #000000;
   background-image: url("img/back-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
 }
 
 .wrapperHeader {
   display: flex;
   justify-content: space-between;
+  margin: 0 10%;
 }
 
 .headerNavigation {
@@ -47,10 +55,15 @@ header {
   background-color: black;
 }
 
+.headerNavigation__toggle {
+  display: none;
+}
+
 .navMenu {
   display: flex;
-  justify-content: space-between;
-  width: 75%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
   padding: 0;
   margin: 0;
 
@@ -62,6 +75,7 @@ header {
   display: flex;
   align-items: center;
   height: 70px;
+  padding: 0 31px;
 
   text-decoration: none;
   color: white;
@@ -69,6 +83,11 @@ header {
   font-weight: 600;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+.enterAccount__link {
+  max-width: 130px;
+  background-color: yellowgreen;
 }
 
 .enterAccount__link::before {
@@ -84,37 +103,224 @@ header {
   background-size: cover;
 }
 
+.navMenu__link[href]:hover,
+.enterAccount__link:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navMenu__link[href]:active,
+.enterAccount__link:active {
+  background-color: #ffffff;
+
+  color: #9a9a9a;
+}
+
+.navMenu__item--active {
+  position: relative;
+}
+
+.navMenu__item--active::after {
+  content: "";
+  position: absolute;
+  right: 30px;
+  bottom: -3px;
+  left: 30px;
+
+  height: 3px;
+
+  background: #826560;
+}
+
+
+.yourAccount {
+  display: none;
+  width: 320px;
+
+  background-color: #efedeb;
+  box-shadow: 0 30px 50px 0 rgba(0, 1, 1, 0.75);
+  z-index: 10;
+}
+
+.yourAccountPosition {
+  position: fixed;
+  top: 135px;
+}
+
+.yourAccount-open {
+  display: block;
+}
+
+.yourAccount__wrapper {
+  margin: 0 20px;
+}
+
+.yourAccount__form {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.yourAccount__title {
+  padding: 30px 0 22px 0;
+  margin: 0;
+  text-align: center;
+
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  color: black;
+}
+
+.yourAccount__instruction {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+
+  font-size: 18px;
+  line-height: 27px;
+  color: black;
+}
+
+.yourAccount__login,
+.yourAccount__password {
+  width: 90%;
+  height: 50px;
+  margin: 0;
+  padding-left: 17px;
+
+  outline: 1px solid #f8f5f2;
+  border: none;
+  background-repeat: no-repeat;
+  background-position-x: 235px;
+  background-position-y: center;
+}
+
+.yourAccount__login:focus,
+.yourAccount__login:hover,
+.yourAccount__password:focus,
+.yourAccount__password:hover {
+  outline: 1px solid #eae5e2;
+}
+
+.yourAccount__login:active,
+.yourAccount__password:active {
+  outline: 1px solid #f4f4f4;
+}
+
+input::placeholder {
+  color: black;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.yourAccount__login {
+  margin: 27px 0 10px 0;
+  background-image: url(img/User\copy\2png);
+}
+
+.yourAccount__password {
+  margin-bottom: 25px;
+  background-image: url(img/Locked\2png);
+}
+
+.rememberForgot {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.yourAccount__rememberMe,
+.yourAccount__iForgot {
+  font-size: 18px;
+  line-height: 30px;
+  color: black;
+}
+
+.yourAccount__rememberMeCheckbox {
+  margin-right: 10px;
+}
+
+.yourAccount__buttons {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 35px;
+}
+
+.yourAccount__button {
+  width: 120px;
+  height: 48px;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 24px;
+
+  border: none;
+}
+
+.yourAccount__enterButton {
+  background-color: #826550;
+  color: white;
+}
+
+.yourAccount__enterButton:focus,
+.yourAccount__enterButton:hover {
+  background-color: #624530;
+}
+
+.yourAccount__enterButton:active {
+  color: #917d6f;
+  outline: none;
+}
+
+.yourAccount__closeButton {
+  font-weight: bold;
+  outline: 1px solid #e4ddd7;
+}
+
+.yourAccount__closeButton:focus,
+.yourAccount__closeButton:hover {
+  outline: 1px solid #eae5e2;
+}
+
+.yourAccount__closeButton:active {
+  outline: 1px solid #ede4de;
+  background-color: #ede4de;
+  color: #e3dcd5;
+}
+
 .headerLogo__img {
   display: block;
   margin: 58px auto 0 auto;
 }
 
 .stats {
-  position: absolute;
-  top: 560px;
-
   display: flex;
+
+  position: absolute;
+  top: 540px;
+
+  width: auto;
 }
 
 .stats__text {
   display: flex;
-  width: 33%;
-  min-height: 320px;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
-
-  background-color: white;
-}
-
-.statsItems__firstColumn,
-.statsItems__secondColumn {
+  flex-grow: 0;
   width: 33%;
+  background-color: #ffffff;
+
+  padding: 36px 60px 31px 43px;
+
+  box-sizing: border-box;
 }
 
 .stats__slogan {
-  margin: 37px 70px 50px 40px;
   padding: 0;
+  margin: 0;
 
   font-size: 36px;
   font-weight: 1000;
@@ -122,25 +328,41 @@ header {
   text-align: left;
 }
 
-.stats__intro {
-  margin: 0 72px 20px 40px;
+.stats__intro,
+.stats__legend--top,
+.stats__legend-bottom {
   padding: 0;
+  margin: 0;
 
   font-size: 20px;
   line-height: 27px;
   text-align: left;
 }
 
-.stats__money,
-.stats__time,
-.stats__hair,
-.stats__likes {
-  min-height: 160px;
-  align-items: center;
-  padding: 30px 0 0 0;
-  box-sizing: border-box;
+.stats__legend--top {
+  display: block;
+  margin-top: auto;
 
-  color: white;
+  color: #e8e8e8;
+}
+
+.stats__legend-bottom {
+  display: none;
+}
+
+.stats__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 66%;
+}
+
+.stats__item {
+  width: 50%;
+  padding: 20px 70px 31px 36px;
+  margin: 0;
+  box-sizing: border-box;
+  align-items: center;
+  color: #ffffff;
 }
 
 .stats__money {
@@ -160,31 +382,29 @@ header {
 }
 
 .stats__numbers {
-  margin: 0 0 20px 20px;
-
+  display: block;
+  margin: 0;
+  padding: 0;
   font-size: 72px;
   font-weight: bold;
-  line-height: 48px;
+  line-height: 86px;
 }
 
 .stats__value {
-  margin: 0 0 0 20px;
-
+  display: block;
+  padding: 0;
+  margin: 0;
   font-size: 20px;
   line-height: 27px;
 }
 
-.stats__legend {
-  margin: 0 0 0 40px;
-
-  font-size: 20px;
-  line-height: 27px;
-  color: #e8e8e8;
-  text-align: left;
+.stats__value br {
+  display: none;
 }
 
 .advantages {
-  width: 100%;
+  width: auto;
+  padding: 240px 0 108px 0;
 
   color: white;
 
@@ -194,39 +414,38 @@ header {
 .advantages__list {
   display: flex;
   margin: 0;
-  padding: 210px 0 0 0;
+  padding: 0;
+  width: auto;
 
   list-style: none;
 }
 
 .advantages__item {
+  width: 33.333%;
   background-repeat: no-repeat;
   background-position-x: center;
 }
 
-.advantages__item--fast {
-  width: 26%;
-  margin: 0 9% 0 0;
+.advantages__item:not(:last-child) {
+  padding: 0 9% 0 0;
+  background-position-x: 35%;
+}
 
+.advantages__item--fast {
   background-image: url(img/advantage-1-illustration.png);
 }
 
 .advantages__item--cool {
-  width: 23%;
-  margin: 0 9% 0 0;
-
   background-image: url(img/advantage-2-illustration.png);
 }
 
 .advantages__item--pricey {
-  width: 27%;
-
   background-image: url(img/advantage-3-illustration.png);
 }
 
 .advantages__title {
   margin: 0 0 22px 0;
-  padding: 126px 5px 0 5px;
+  padding-top: 126px;
 
   text-align: center;
   font-size: 30px;
@@ -235,12 +454,16 @@ header {
 }
 
 .advantages__description {
-  margin: 0 0 30px 0;
+  margin: 0;
   padding: 0;
 
   text-align: center;
   font-size: 20px;
   line-height: 27px;
+}
+
+.advantages__toggles {
+  display: none;
 }
 
 .news,
@@ -277,12 +500,13 @@ header {
   display: flex;
   justify-content: center;
 
-  width: 30%;
+  width: 33.333%;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .news__item:not(:last-child) {
-  margin: 0 4% 0 0;
+  padding: 0 4% 0 0;
 }
 
 .news__item:hover,
@@ -366,15 +590,19 @@ header {
   margin: 0 0 60px 0;
 }
 
-.news__showAll:hover,
-.news__showAll:focus {
+.news__showAll--top:hover,
+.news__showAll--top:focus {
   outline: 1px solid #eae5e2;
 }
 
-.news__showAll:active {
+.news__showAll--top:active {
   outline: 1px solid #ede4de;
   background-color: #ede4de;
   color: #e3dcd5;
+}
+
+.news__showAll--mobile {
+  display: none;
 }
 
 .line {
@@ -414,6 +642,7 @@ header {
 }
 
 .feedback__authorPhoto {
+  align-self: center;
   margin: 0;
   padding: 0;
 }
@@ -562,7 +791,8 @@ header {
   list-style: none;
 }
 
-.social__item {
+.social__link {
+  display: flex;
   min-width: 50px;
   min-height: 50px;
 
@@ -573,17 +803,17 @@ header {
   outline: 1px solid #3e3e3e;
 }
 
-.social__item--vk {
+.social__link--vk {
   background-image: url(img/vk-icon-big.png);
   background-size: 15px 17px;
 }
 
-.social__item--fb {
+.social__link--fb {
   background-image: url(img/facebook-icon-big.png);
   background-size: 10px 21px;
 }
 
-.social__item--inst {
+.social__link--inst {
   background-image: url(img/insta-icon-big.png);
   background-size: 19px 19px;
 }

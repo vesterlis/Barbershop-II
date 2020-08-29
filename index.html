@@ -6,20 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
-        <!--
-        <link rel="stylesheet" href="768px.css" />
-        <link rel="stylesheet" href="360px.css" />
-        -->
+
+        <link rel="stylesheet" href="tablet-index.css" />
+        <link rel="stylesheet" href="mobile-index.css" />
         <title>Барбершоп &laquoБородинский&raquo</title>
     </head>
 
     <body class="page">
 
         <header class="header">
-            <nav class="headerNavigation">
-                <div class="wrapper wrapperHeader">
+            <nav class="headerNavigation headerNavigation--closed">
+
+                <div class="wrapperHeader">
+
+                    <button class="headerNavigation__toggle" type="button"></button>
                     <ul class="headerNavigation__navMenu navMenu">
-                        <li class="navMenu__item">
+                        <li class="navMenu__item navMenu__item--active">
                             <a class="navMenu__link">
                                 Главная
                             </a>
@@ -54,12 +56,48 @@
                         <a class="enterAccount__link" href="#">Войти</a>
                     </div>
                 </div>
+
+                <div class="yourAccount yourAccountPosition">
+                    <div class="yourAccount__wrapper">
+                        <form class="yourAccount__form" action="#" method="POST">
+                            <p class="yourAccount__title">Личный кабинет</p>
+                            <p class="yourAccount__instruction">Введите свой логин и пароль, чтобы войти</p>
+                            <label class="visually-hidden" for="user-login">Логин</label>
+                            <input class="yourAccount__login" type="text" name="login" placeholder="Логин"
+                                id="user-login" autofocus>
+                            <label class="visually-hidden" for="user-password"> Пароль</label>
+                            <input class="yourAccount__password" type="password" name="password" placeholder="Пароль"
+                                id="user-password">
+                            <div class="youAccount__rememberForgot rememberForgot">
+                                <label class="yourAccount__rememberMe">
+                                    <input class="yourAccount__rememberMeCheckbox" type="checkbox" name="checkbox">
+                                    Запомните
+                                    меня
+                                </label>
+                                <a class="yourAccount__iForgot" href="#">Я забыл пароль!</a>
+                            </div>
+                            <div class="yourAccount__buttons">
+                                <button class="yourAccount__enterButton yourAccount__button" type="submit"
+                                    name="enterButton">Войти</button>
+                                <button class="yourAccount__closeButton yourAccount__button" type="button"
+                                    value="Закрыть">Закрыть</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
             </nav>
 
             <div class="headerLogo">
                 <a class="headerLogo__link" href="#">
-                    <img class="headerLogo__img headerLogo__img--full" src="img/logotype-desktop.png" width="368"
-                        height="155" alt="Логотип барбершопа Бородинский">
+                    <!--
+                    <picture>
+                        <source media="(min-width: 320px)" srcset="img/logotype-mobile.svg">
+                        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+                            -->
+                    <img class="headerLogo__img headerLogo__img--full" src="img/logotype-mobile.png" width="226"
+                        height="30" alt="Логотип барбершопа Бородинский">
+                    </picture>
                 </a>
             </div>
         </header>
@@ -67,49 +105,50 @@
         <main class="main">
 
             <h1 class="visually-hidden">Барбершоп &laquoБородинский&raquo</h1>
-            <div class="wrapper">
+            <div class="wrapperMain">
                 <section class="stats">
                     <h2 class="visually-hidden">Статистика барбершопа</h2>
                     <div class="stats__text">
                         <p class="stats__slogan">Стрижка у нас - это выгодно!</p>
                         <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-                        <small class="stats__legend">* - приведенные данные - ложь</small>
+                        <small class="stats__legend stats__legend--top">* - приведенные данные - ложь</small>
                     </div>
 
-                    <div class="statsItems__firstColumn">
-                        <div class="stats__money">
+                    <div class="stats__list">
+
+                        <div class="stats__item stats__money">
                             <span class="stats__numbers">1 500</span>
-                            <p class="stats__value">рублей вложений
+                            <p class="stats__value">рублей <br> вложений
                                 <br></p>
                         </div>
 
-                        <div class="stats__hair">
-                            <span class="stats__numbers">90 000
-                            </span>
-                            <p class="stats__value">постриженных волос</p>
-                        </div>
-                    </div>
-
-                    <div class="statsItems__secondColumn">
-                        <div class="stats__time">
+                        <div class="stats__item stats__time">
                             <span class="stats__numbers">7 200
                             </span>
                             <p class="stats__value">
-                                секунд времени мастера</p>
+                                секунд <br> времени мастера</p>
                         </div>
-                        <div class="stats__likes">
+
+                        <div class="stats__item stats__hair">
+                            <span class="stats__numbers">90 000
+                            </span>
+                            <p class="stats__value">постриженных <br> волос</p>
+                        </div>
+
+                        <div class="stats__item stats__likes">
                             <span class="stats__numbers">500 000</span>
-                            <p class="stats__value">лайков и комплиментов</p>
+                            <p class="stats__value">лайков и <br> комплиментов</p>
                         </div>
                     </div>
                 </section>
             </div>
 
             <section class="advantages">
+                <small class="stats__legend stats__legend-bottom">* - приведенные данные - ложь</small>
                 <h2 class="visually-hidden">Наши преимущества</h2>
-                <div class="wrapper">
-                    <ul class="advantages__list">
-                        <li class="advantages__item advantages__item--fast">
+                <div class="wrapper-mobile wrapperMain slider">
+                    <ul class="advantages__list slider__list">
+                        <li class="advantages__item advantages__item--fast slider__item">
                             <h3 class="advantages__title">Быстро</h3>
                             <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят
                                 незаметно
@@ -118,7 +157,7 @@
                                 стрижки-минутки</p>
                         </li>
 
-                        <li class="advantages__item advantages__item--cool">
+                        <li class="advantages__item advantages__item--cool slider__item">
                             <h3 class="advantages__title">Круто</h3>
                             <p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас
                                 звезду футбола или кино. Во всяком
@@ -126,7 +165,7 @@
                                 внешне.</p>
                         </li>
 
-                        <li class="advantages__item advantages__item--pricey">
+                        <li class="advantages__item advantages__item--pricey slider__item">
                             <h3 class="advantages__title">Дорого</h3>
                             <p class="advantages__description">Наши мастера - профессионалы своего дела и не могут
                                 стоить дёшево. К тому же, разве цена не
@@ -134,14 +173,22 @@
                                 определённый статус?</p>
                         </li>
                     </ul>
+
+                    <div class="advantages__toggles slider__toggles">
+                        <!--В примере вместо div используется p. Насколько это критично?-->
+                        <button class="slider__toggle" type="button" aria-label="Преимущество Быстро">1</button>
+                        <button class="slider__toggle" type="button" aria-label="Преимущество Круто">2</button>
+                        <button class="slider-toggle" type="button" aria-label="Преимущество Дорого">3</button>
+                    </div>
+
                 </div>
             </section>
 
             <section class="news">
-                <div class="wrapper">
+                <div class="wrapper-mobile wrapperMain">
                     <div class="news__titleButton">
                         <h2 class="news__title">Новости и акции</h2>
-                        <a class="news__showAll button" href="#">Показать всё</a>
+                        <a class="news__showAll--top button" href="#">Показать всё</a>
                     </div>
                     <ul class="news__list">
                         <li class="news__item">
@@ -174,7 +221,7 @@
                                 Спешите записаться!</p>
                         </li>
 
-                        <li class="news__item">
+                        <li class="news__item close-new">
                             <div class="news__flagDate">
                                 <div class="news__flagBackground">
                                     <time datetime="2017-09-09">
@@ -190,11 +237,15 @@
                         </li>
                     </ul>
 
+                    <a class="news__showAll--mobile button" href="#">Показать всё</a>
+
                 </div>
             </section>
 
+            <div class="news__line line"></div>
+
             <section class="feedback">
-                <div class="wrapper">
+                <div class="wrapper-mobile wrapperMain">
                     <div class="feedback__titleButton">
                         <h2 class="feedback__title">Отзывы о нас</h2>
                         <a class="feedback__giveFeedback button" href="#">Оставить свой</a>
@@ -207,7 +258,7 @@
 
                             <blockquote class="feedback__item slider__item">
                                 <p class="feedback__authorPhoto">
-                                    <img class="feedback__authorImg" src="img/Barker-full.jpg" width="250" height="160"
+                                    <img class="feedback__authorImg" src="" width="250" height="160"
                                         alt="Фото Трэвиса Баркера">
                                 </p>
                                 <div class="feedback__text">
@@ -265,7 +316,7 @@
         </main>
 
         <footer class="footer">
-            <div class="wrapper wrapperFooter">
+            <div class="wrapperFooter">
                 <div class="footer__contacts contacts">
                     <p class="contacts__title">Барбершоп &laquoБородинский&raquo</p>
                     <p class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, 19/8</p>
@@ -277,14 +328,15 @@
                         Давайте дружить!
                     </p>
                     <ul class="social__list">
-                        <li class="social__item social__item--vk">
-                            <a class="social__link" href="vk.com" aria-label="Мы Вконтакте"></a>
+                        <li class="social__item">
+                            <a class="social__link social__link--vk" href="vk.com" aria-label="Мы Вконтакте"></a>
                         </li>
-                        <li class="social__item social__item--fb">
-                            <a class="social__link" href="fb.com" aria-label="Мы в Фэйсбуке"></a>
+                        <li class="social__item">
+                            <a class="social__link social__link--fb" href="fb.com" aria-label="Мы в Фэйсбуке"></a>
                         </li>
-                        <li class="social__item social__item--inst">
-                            <a class="social__link" href="instagram.com" aria-label="Мы в Инстраграме"></a>
+                        <li class="social__item">
+                            <a class="social__link social__link--inst" href="instagram.com"
+                                aria-label="Мы в Инстраграме"></a>
                         </li>
                     </ul>
                 </div>
@@ -297,6 +349,7 @@
                 </div>
             </div>
         </footer>
+        <script src="nav-menu-actions.js"></script>
     </body>
 
 </html>

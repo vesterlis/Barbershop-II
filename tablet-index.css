@@ -1,0 +1,260 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .wrapperMain,
+    .wrapperFooter {
+        margin: 0 8.4%;
+    }
+
+    header {
+        min-height: 470px;
+
+        background-image: url("img/back-tablet.jpg");
+    }
+
+    .wrapperHeader {
+        margin: 0 8.4%;
+    }
+
+    .navMenu__link,
+    .enterAccount__link {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navMenu__link {
+        margin-right: 32px;
+    }
+
+    .enterAccount__link {
+        font-size: 0;
+    }
+
+    .enterAccount__link {
+        max-width: 130px;
+        background-color: yellowgreen;
+    }
+
+    .navMenu__link[href]:hover,
+    .enterAccount__link:hover {
+        color: #534033;
+        background-color: #000000;
+    }
+
+    .navMenu__link[href]:active,
+    .enterAccount__link:active {
+        background-color: #000000;
+
+        color: #9a9a9a;
+    }
+
+    .navMenu__item--active {
+        position: relative;
+    }
+
+    .navMenu__item--active::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+
+        height: 3px;
+
+        background: #826560;
+    }
+
+    .stats {
+        flex-direction: column;
+
+        position: absolute;
+        top: 270px;
+
+        width: auto;
+    }
+
+    .stats__text {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: auto;
+    }
+
+    .stats__slogan {
+        width: 45%;
+    }
+
+    .stats__intro {
+        width: 45%;
+    }
+
+    .stats__legend--top {
+        margin-top: 29px;
+    }
+
+    .stats__list {
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    .stats__item {
+        width: 50%;
+    }
+
+    .stats__value br {
+        display: none;
+    }
+
+    .stats__legend-bottom {
+        display: none;
+    }
+
+    .advantages {
+        padding: 366px 0 108px 0;
+    }
+
+    .advantages__list {
+        flex-direction: column;
+        padding: 0 40px 0 30px;
+    }
+
+    .advantages__item {
+        width: auto;
+        padding: 46px 0 41px 130px;
+        background-position: 0% 50%;
+        border-bottom: 1px solid #9a9a9a;
+    }
+
+    .advantages__item:not(:last-child) {
+        padding: 46px 0 41px 130px;
+        background-position: 0% 55%;
+    }
+
+    .advantages__title {
+        text-align: left;
+        margin: 0 0 23px 0;
+        padding: 0;
+    }
+
+    .advantages__description {
+        text-align: left;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .advantages__toggles {
+        display: none;
+    }
+
+    .news__title,
+    .feedback__title {
+        margin: 0;
+    }
+
+    .news__item {
+        width: 50%;
+    }
+
+    .news__item:last-child {
+        display: none;
+    }
+
+    .feedback {
+        position: relative;
+    }
+
+    .feedback__item {
+        display: flex;
+        margin: 0;
+        border: 1px solid #c9bdb1;
+        border-right: none;
+        border-left: none;
+        box-sizing: border-box;
+    }
+
+    /*
+    .feedback__authorPhoto {
+        align-self: center;
+        margin: 0;
+        padding: 0;
+    }
+*/
+    .feedback__text {
+        padding: 35px 54px 10px 75px;
+
+        border: none;
+
+        box-sizing: border-box;
+    }
+
+    .feedback__authorsName {
+        font-size: 24px;
+        line-height: 27px;
+    }
+
+
+    .feedback__toggles {
+        position: absolute;
+        top: 270px;
+        left: 45%;
+
+        margin: 0;
+    }
+
+    .wrapperFooter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 53px 0 60px 0;
+    }
+
+    .footer__contacts {
+        margin: 0;
+        order: 1;
+    }
+
+    .contacts {
+        width: 65%;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .footer__social {
+        margin: 0;
+        order: 3;
+    }
+
+    .footer__copyright {
+        margin: 0;
+        padding: 0;
+        width: 20%;
+        order: 2;
+        text-align: right;
+    }
+
+    .social__calling {
+        display: none;
+    }
+
+    .copyright__designed {
+        text-align: center;
+        margin-left: 15px;
+    }
+
+    .social__list {
+        display: flex;
+        width: auto;
+        padding: 0;
+
+        list-style: none;
+    }
+
+    .social__link {
+        width: 212px;
+        height: 50px;
+
+        text-align: center;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        outline: 1px solid #3e3e3e;
+    }
+}
