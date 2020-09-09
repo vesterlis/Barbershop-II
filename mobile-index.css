@@ -19,6 +19,7 @@
 
   .headerNavigation {
     order: 2;
+    height: 51px;
   }
 
   .headerLogo__img {
@@ -35,6 +36,7 @@
     min-width: 320px;
     min-height: 51px;
     margin: 0 auto;
+
     background-color: #826550;
   }
 
@@ -110,7 +112,7 @@
     position: absolute;
     top: 0;
     right: auto;
-    left: 0;
+    left: -70px;
     z-index: 2;
 
     display: block;
@@ -218,8 +220,6 @@
     z-index: 10;
   }
 
-
-
   .stats {
     display: flex;
     flex-direction: column;
@@ -281,6 +281,7 @@
     display: block;
     margin: 0;
     padding: 0;
+
     font-size: 40px;
     font-weight: bold;
     line-height: normal;
@@ -290,6 +291,7 @@
     display: block;
     padding: 0;
     margin: 0;
+
     font-size: 18px;
     line-height: normal;
     text-align: right;
@@ -301,13 +303,16 @@
 
   .stats__legend-bottom {
     display: block;
-    color: #9a9a9a;
     padding: 0 0 0 6.25%;
+
+    color: #9a9a9a;
+
   }
 
   .advantages {
     width: auto;
     padding: 20px 0 108px 0;
+
     background-color: #242424;
   }
 
@@ -319,11 +324,13 @@
   .advantages__item {
     width: auto;
     padding: 44px 0 0 0;
+
     background-position: 50% 20%;
   }
 
   .advantages__item:not(:last-child) {
     padding: 44px 0 0 0;
+
     background-position: 50% 20%;
   }
 
@@ -403,7 +410,7 @@
   }
 
   .news__item:first-child {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #eae5e2;
   }
 
   .button {
@@ -423,6 +430,7 @@
   .news__showAll--mobile {
     display: block;
     margin: 0 auto;
+    width: 100%;
   }
 
   .news__showAll:hover,
@@ -508,17 +516,12 @@
   }
 
   .footer__contacts {
-    margin: 0;
+    margin: 0 6.25%;
     padding: 0;
   }
 
   .contacts {
     width: auto;
-  }
-
-  .footer__social {
-    width: auto;
-    margin: 0;
   }
 
   .contacts__title {
@@ -528,8 +531,22 @@
     text-transform: none;
   }
 
+  .contacts__phone {
+    display: none;
+  }
+
+  .contacts__phoneButton {
+    display: block;
+    margin: auto;
+    width: 100%;
+
+    color: white;
+
+    outline: 1px solid #3c3c3c;
+  }
+
   .footer__social {
-    margin: 0 auto;
+    margin: 0;
   }
 
   .social__calling {
@@ -537,15 +554,15 @@
   }
 
   .social__list {
-    width: 100%;
+    flex-grow: 1;
   }
 
   .social__item {
     width: 33%;
+    flex-grow: 1;
   }
 
   .social__link {
-    width: 110px;
     height: 100px;
 
     text-align: center;
@@ -568,5 +585,13 @@
   .social__link--inst {
     background-image: url(img/insta-icon-big.png);
     background-size: 36px 36px;
+  }
+
+  .footer__copyright {
+    margin: 0 6.25%;
+  }
+
+  .copyright__link {
+    width: 100%;
   }
 }
