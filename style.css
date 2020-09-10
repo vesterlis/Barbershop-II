@@ -142,7 +142,7 @@ header {
   width: 320px;
   z-index: 10;
 
-  background-color: #efedeb;
+  background-color: #f8f5f2;
   box-shadow: 0 30px 50px 0 rgba(0, 1, 1, 0.75);
 }
 
@@ -173,6 +173,7 @@ header {
   font-weight: bold;
   line-height: 30px;
   color: black;
+  text-transform: uppercase;
 }
 
 .yourAccount__instruction {
@@ -192,7 +193,7 @@ header {
   margin: 0;
   padding-left: 17px;
 
-  outline: 1px solid #f8f5f2;
+  outline: 1px solid #e5ddd5;
   border: none;
   background-repeat: no-repeat;
   background-position-x: 235px;
@@ -223,12 +224,12 @@ input:focus::placeholder {
 
 .yourAccount__login {
   margin: 27px 0 10px 0;
-  background-image: url(img/User\copy\2png);
+  background-image: url(img/User.png);
 }
 
 .yourAccount__password {
   margin-bottom: 25px;
-  background-image: url(img/Locked\2png);
+  background-image: url(img/Locked.png);
 }
 
 .rememberForgot {
@@ -245,17 +246,65 @@ input:focus::placeholder {
 }
 
 .yourAccount__rememberMeCheckbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.yourAccount__iForgot {
   margin-right: 10px;
 }
 
+.yourAccount__rememberMeCheckbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.yourAccount__rememberMeCheckbox+label::before {
+  content: "";
+  width: 31px;
+  height: 31px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #e5ddd5;
+  margin-right: 15px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  box-sizing: border-box;
+}
+
+.yourAccount__rememberMeCheckbox:checked+label::before {
+  background-color: #d5c9bd;
+  background-image: url('img/checked.png');
+  background-size: 22px 16px;
+  border: none;
+}
+
+.yourAccount__rememberMeCheckbox:not(:checked):not(:disabled)+label:focus::before {
+  border-color: #eae5e2;
+}
+
+.yourAccount__rememberMeCheckbox:not(:checked):not(:disabled)+label:hover::before {
+  border-color: #eae5e2;
+}
+
+.yourAccount__rememberMeCheckbox:not(:disabled):active+label::before {
+  border-color: #d5c9bd;
+  background-color: #d5c9bd;
+}
+
+
 .yourAccount__buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 35px;
 }
 
 .yourAccount__button {
-  width: 120px;
+  width: 130px;
   height: 48px;
 
   text-transform: uppercase;
@@ -282,7 +331,8 @@ input:focus::placeholder {
 
 .yourAccount__closeButton {
   font-weight: bold;
-  outline: 1px solid #e4ddd7;
+  outline: 1px solid #e5ddd5;
+  background-color: #f8f5f2;
 }
 
 .yourAccount__closeButton:focus,
@@ -622,7 +672,7 @@ input:focus::placeholder {
 .feedback {
   margin: 0;
   padding: 37px 0 46px 0;
-  
+
   border-top: 1px solid #c9bdb1;
 }
 
@@ -722,6 +772,17 @@ input:focus::placeholder {
   margin: 0 23px 0 0;
 }
 
+.slider__toggle {
+  transform: rotate(45deg);
+  width: 20px;
+  height: 20px;
+  border: 1px solid #878684;
+}
+
+.slider__toggle--active {
+  background-color: #353535;
+}
+
 .footer {
   color: white;
   background-color: #313131;
@@ -787,7 +848,7 @@ input:focus::placeholder {
   color: #393939;
 
   background-color: #292929;
-  outline: 1px solid #292929;
+  outline: none;
 }
 
 .social__list {

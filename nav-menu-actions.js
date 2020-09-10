@@ -7,10 +7,6 @@ enterAccount__link.onclick = function () {
 
 
 
-
-
-
-
 let headerNavigation = document.querySelector('.headerNavigation');
 let headerNavigation__toggle = document.querySelector('.headerNavigation__toggle');
 
@@ -24,10 +20,12 @@ headerNavigation__toggle.onclick = function () {
     }
 };
 
+
 let yourAccount__closeButton = document.querySelector('.yourAccount__closeButton');
 yourAccount__closeButton.onclick = function () {
     yourAccount.classList.remove('yourAccount-open');
 }
+
 
 /*
 

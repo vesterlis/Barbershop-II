@@ -545,6 +545,19 @@
     outline: 1px solid #3c3c3c;
   }
 
+  .contacts__phoneButton :hover,
+  .contacts__phoneButton :focus {
+    outline: 1px solid #393939;
+  }
+
+  .contacts__phoneButton:active {
+    color: #393939;
+
+    background-color: #292929;
+    outline: none;
+  }
+
+
   .footer__social {
     margin: 0;
   }
