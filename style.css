@@ -138,8 +138,9 @@ header {
 }
 
 .yourAccount {
+  position: relative;
   display: none;
-  width: 320px;
+  width: 460px;
   z-index: 10;
 
   background-color: #f8f5f2;
@@ -148,7 +149,20 @@ header {
 
 .yourAccountPosition {
   position: fixed;
-  top: 135px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 125px;
+}
+
+.yourAccount__crossButton {
+  position: absolute;
+  top: 62px;
+  left: 537px;
+  width: 26px;
+  height: 26px;
+  border: none;
+  background-image: url('img/cross-button.png');
+  background-color: transparent;
 }
 
 .yourAccount-open {
@@ -156,7 +170,7 @@ header {
 }
 
 .yourAccount__wrapper {
-  margin: 0 20px;
+  margin: 0 70px;
 }
 
 .yourAccount__form {
@@ -196,7 +210,7 @@ header {
   outline: 1px solid #e5ddd5;
   border: none;
   background-repeat: no-repeat;
-  background-position-x: 235px;
+  background-position-x: 270px;
   background-position-y: center;
 }
 
@@ -296,55 +310,25 @@ input:focus::placeholder {
   background-color: #d5c9bd;
 }
 
-
 .yourAccount__buttons {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 35px;
+  display: none;
 }
 
-.yourAccount__button {
-  width: 130px;
+.yourAccount__theOneButton {
+  width: 98%;
   height: 48px;
+  margin: 12px 0 57px 0;
+  padding: 0;
 
   text-transform: uppercase;
   font-weight: bold;
   line-height: 24px;
 
   border: none;
-}
-
-.yourAccount__enterButton {
   background-color: #826550;
-  color: white;
+  color: white
 }
 
-.yourAccount__enterButton:focus,
-.yourAccount__enterButton:hover {
-  background-color: #624530;
-}
-
-.yourAccount__enterButton:active {
-  color: #917d6f;
-  outline: none;
-}
-
-.yourAccount__closeButton {
-  font-weight: bold;
-  outline: 1px solid #e5ddd5;
-  background-color: #f8f5f2;
-}
-
-.yourAccount__closeButton:focus,
-.yourAccount__closeButton:hover {
-  outline: 1px solid #eae5e2;
-}
-
-.yourAccount__closeButton:active {
-  outline: 1px solid #ede4de;
-  background-color: #ede4de;
-  color: #e3dcd5;
-}
 
 .headerLogo__img {
   display: block;

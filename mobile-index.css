@@ -220,6 +220,80 @@
     z-index: 10;
   }
 
+  .yourAccount {
+    width: 320px;
+  }
+
+  .yourAccountPosition {
+    top: 135px;
+  }
+
+  .yourAccount__crossButton {
+    display: none;
+  }
+
+  .yourAccount__wrapper {
+    margin: 0 20px;
+  }
+
+  .yourAccount__login,
+  .yourAccount__password {
+    background-position-x: 235px;
+  }
+  
+  .yourAccount__theOneButton {
+    display: none;
+  }
+
+  .yourAccount__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 35px;
+  }
+
+  .yourAccount__button {
+    width: 130px;
+    height: 48px;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 24px;
+
+    border: none;
+  }
+
+  .yourAccount__enterButton {
+    background-color: #826550;
+    color: white;
+  }
+
+  .yourAccount__enterButton:focus,
+  .yourAccount__enterButton:hover {
+    background-color: #624530;
+  }
+
+  .yourAccount__enterButton:active {
+    color: #917d6f;
+    outline: none;
+  }
+
+  .yourAccount__closeButton {
+    font-weight: bold;
+    outline: 1px solid #e5ddd5;
+    background-color: #f8f5f2;
+  }
+
+  .yourAccount__closeButton:focus,
+  .yourAccount__closeButton:hover {
+    outline: 1px solid #eae5e2;
+  }
+
+  .yourAccount__closeButton:active {
+    outline: 1px solid #ede4de;
+    background-color: #ede4de;
+    color: #e3dcd5;
+  }
+
   .stats {
     display: flex;
     flex-direction: column;

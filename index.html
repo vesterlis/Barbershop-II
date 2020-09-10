@@ -58,6 +58,7 @@
                 </div>
 
                 <div class="yourAccount yourAccountPosition">
+                    <button class="yourAccount__crossButton" type="button"></button>
                     <div class="yourAccount__wrapper">
                         <form class="yourAccount__form" action="#" method="POST">
                             <p class="yourAccount__title">Личный кабинет</p>
@@ -69,12 +70,16 @@
                             <input class="yourAccount__password" type="password" name="password" placeholder="Пароль"
                                 id="user-password">
                             <div class="youAccount__rememberForgot rememberForgot">
-                                    <input class="yourAccount__rememberMeCheckbox" type="checkbox" name="checkbox" id="rememberMe">
-                                    <label class="yourAccount__rememberMe" for="rememberMe">Запомните
-                                        меня</label>
+                                <input class="yourAccount__rememberMeCheckbox" type="checkbox" name="checkbox"
+                                    id="rememberMe">
+                                <label class="yourAccount__rememberMe" for="rememberMe">Запомните
+                                    меня</label>
 
                                 <a class="yourAccount__iForgot" href="#">Я забыл пароль!</a>
                             </div>
+                            <button class="yourAccount__theOneButton yourAccount__button" type="submit"
+                                name="enterButton">Войти в личный кабинет</button>
+
                             <div class="yourAccount__buttons">
                                 <button class="yourAccount__enterButton yourAccount__button" type="submit"
                                     name="enterButton">Войти</button>
@@ -279,7 +284,8 @@
                                     <b class="feedback__authorsName">2
 
                                     </b>
-                                    <p class="feedback__comment">лалалалалалалаллалалаллалаллалалаллалалалалалалалаллалалалалаллалалаллалалалаллалалалалаллалалаллалалалалаллалал
+                                    <p class="feedback__comment">
+                                        лалалалалалалаллалалаллалаллалалаллалалалалалалалаллалалалалаллалалаллалалалаллалалалалаллалалаллалалалалаллалал
                                     </p>
                                 </div>
                             </blockquote>
@@ -291,7 +297,8 @@
                                 </p>
                                 <div class="feedback__text">
                                     <b class="feedback__authorsName">3</b>
-                                    <p class="feedback__comment">фафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафа
+                                    <p class="feedback__comment">
+                                        фафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафа
                                     </p>
                                 </div>
                             </blockquote>
@@ -302,7 +309,8 @@
                         </button>
                     </div>
                     <div class="feedback__toggles slider__toggles">
-                        <button class="slider__toggle slider__toggle--active" type="button" aria-label="Отзыв Трэвиса Баркера"></button>
+                        <button class="slider__toggle slider__toggle--active" type="button"
+                            aria-label="Отзыв Трэвиса Баркера"></button>
                         <button class="slider__toggle" type="button" aria-label="Отзыв 2"></button>
                         <button class="slider__toggle" type="button" aria-label="Отзыв 3"></button>
                     </div>
