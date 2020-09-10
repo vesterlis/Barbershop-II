@@ -110,7 +110,7 @@
     }
 
     .advantages {
-        padding: 365px 0 108px 0;
+        padding: 365px 0 0 0;
     }
 
     .advantages__list {
@@ -124,6 +124,10 @@
 
         background-position: 0% 50%;
         border-bottom: 1px solid #c9bdb1;
+    }
+
+    .advantages__item:last-child    {
+        border: none;
     }
 
     .advantages__item:not(:last-child) {
@@ -150,6 +154,13 @@
     .advantages__toggles {
         display: none;
     }
+
+    
+    .news {
+
+padding: 85px 0 42px 0;
+      }
+
 
     .news__title,
     .feedback__title {

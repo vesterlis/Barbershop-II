@@ -451,7 +451,7 @@ input:focus::placeholder {
 
 .advantages {
   width: auto;
-  padding: 240px 0 108px 0;
+  padding: 240px 0 20px 0;
 
   color: white;
 
@@ -514,6 +514,17 @@ input:focus::placeholder {
 .advantages__toggles {
   display: none;
 }
+
+.wing-advantages {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top: 5vw solid #353535;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+}
+
 
 .news,
 .feedback {
@@ -767,9 +778,13 @@ input:focus::placeholder {
   background-color: #353535;
 }
 
+.wing-feedback {
+  display: none;
+}
+
 .footer {
   color: white;
-  background-color: #313131;
+  background-color: #292929;
 }
 
 .wrapperFooter {
@@ -831,7 +846,7 @@ input:focus::placeholder {
 .social__link:active {
   color: #393939;
 
-  background-color: #292929;
+  background-color: #252525;
   outline: none;
 }
 
