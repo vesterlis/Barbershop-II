@@ -671,20 +671,27 @@ input:focus::placeholder {
   border-top: 1px solid #c9bdb1;
 }
 
-.feedback__wrapper,
-.feedback__list {
+.feedback__wrapper {
   display: flex;
   justify-content: center;
 }
 
-.feedback__item:not(:first-child) {
-  display: none;
+.sliderwrapper {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 21px;
+}
+
+.feedback__list {
+  display: flex;
+  width: 100%;
 }
 
 .feedback__item {
+  width: 100%;
   display: flex;
-  margin: 0 21px;
-  flex-grow: 1;
+  flex-shrink: 0;
+  margin: 0;
 }
 
 .feedback__authorPhoto {
@@ -774,9 +781,6 @@ input:focus::placeholder {
   border: 1px solid #878684;
 }
 
-.slider__toggle--active {
-  background-color: #353535;
-}
 
 .wing-feedback {
   display: none;

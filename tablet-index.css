@@ -126,7 +126,7 @@
         border-bottom: 1px solid #c9bdb1;
     }
 
-    .advantages__item:last-child    {
+    .advantages__item:last-child {
         border: none;
     }
 
@@ -155,11 +155,10 @@
         display: none;
     }
 
-    
-    .news {
 
-padding: 85px 0 42px 0;
-      }
+    .news {
+        padding: 85px 0 42px 0;
+    }
 
 
     .news__title,
@@ -179,25 +178,25 @@ padding: 85px 0 42px 0;
         position: relative;
     }
 
-    .feedback__item {
-        display: flex;
+    .sliderwrapper {
         margin: 0;
+    }
 
+    .feedback__item {
         border: 1px solid #c9bdb1;
         border-right: none;
         border-left: none;
         box-sizing: border-box;
     }
 
-    /*
+
     .feedback__authorPhoto {
-        align-self: center;
-        margin: 0;
+        margin: 0 0 0 30px;
         padding: 0;
     }
-*/
+
     .feedback__text {
-        padding: 35px 54px 0px 75px;
+        padding: 35px 10px 0 75px;
 
         border: none;
 

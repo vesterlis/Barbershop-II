@@ -545,23 +545,7 @@
   }
 
   .feedback {
-    margin: 0;
     padding: 37px 0 0 0;
-  }
-
-  .feedback__wrapper,
-  .feedback__list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .feedback__item:not(:first-child) {
-    display: none;
-  }
-
-  .feedback__item {
-    display: flex;
-    margin: 0 21px;
   }
 
   .feedback__authorPhoto {
@@ -571,7 +555,7 @@
 
   .feedback__text {
     min-height: 0;
-    padding: 35px 0px 0 0px;
+    padding: 35px 0 0 0;
 
     border: none;
   }
