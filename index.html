@@ -150,9 +150,9 @@
             <section class="advantages">
                 <small class="stats__legend stats__legend-bottom">* - приведенные данные - ложь</small>
                 <h2 class="visually-hidden">Наши преимущества</h2>
-                <div class="wrapper-mobile wrapperMain slider">
-                    <ul class="advantages__list slider__list">
-                        <li class="advantages__item advantages__item--fast slider__item">
+                <div class="wrapper-mobile wrapperMain wrapperAS ">
+                    <ul class="advantages__list">
+                        <li class="advantages__item advantages__item--fast">
                             <h3 class="advantages__title">Быстро</h3>
                             <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят
                                 незаметно
@@ -161,7 +161,7 @@
                                 стрижки-минутки</p>
                         </li>
 
-                        <li class="advantages__item advantages__item--cool slider__item">
+                        <li class="advantages__item advantages__item--cool">
                             <h3 class="advantages__title">Круто</h3>
                             <p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас
                                 звезду футбола или кино. Во всяком
@@ -169,7 +169,7 @@
                                 внешне.</p>
                         </li>
 
-                        <li class="advantages__item advantages__item--pricey slider__item">
+                        <li class="advantages__item advantages__item--pricey">
                             <h3 class="advantages__title">Дорого</h3>
                             <p class="advantages__description">Наши мастера - профессионалы своего дела и не могут
                                 стоить дёшево. К тому же, разве цена не
@@ -178,13 +178,12 @@
                         </li>
                     </ul>
 
-                    <div class="advantages__toggles slider__toggles">
-                        <!--В примере вместо div используется p. Насколько это критично?-->
-                        <button class="slider__toggle" type="button" aria-label="Преимущество Быстро">1</button>
-                        <button class="slider__toggle" type="button" aria-label="Преимущество Круто">2</button>
-                        <button class="slider-toggle" type="button" aria-label="Преимущество Дорого">3</button>
-                    </div>
-
+                </div>
+                <div class="advantages__toggles slider__toggles">
+                    <!--В примере вместо div используется p. Насколько это критично?-->
+                    <button class="slider__toggle" type="button" aria-label="Преимущество Быстро" id="slide1">1</button>
+                    <button class="slider__toggle" type="button" aria-label="Преимущество Круто" id="slide2">2</button>
+                    <button class="slider-toggle" type="button" aria-label="Преимущество Дорого" id="slide3">3</button>
                 </div>
             </section>
 
@@ -257,52 +256,54 @@
                     <div class="feedback__wrapper slider">
                         <button class="feedback__leftArrow feedback__arrowButton">
                             <span class="feedbackArrow__text feedbackArrow__text--left">Предыдущий слайд</span></button>
-                        <div class="feedback__list slider__list">
+                        <div class="sliderwrapper">
+                            <div class="feedback__list slider__list">
 
-                            <blockquote class="feedback__item slider__item">
-                                <p class="feedback__authorPhoto">
-                                    <img class="feedback__authorImg" src="" width="250" height="160"
-                                        alt="Фото Трэвиса Баркера">
-                                </p>
-                                <div class="feedback__text">
-                                    <b class="feedback__authorsName">Трэвис Баркер</b>
-                                    <p class="feedback__comment">Спасибо за лысину! Был проездом в Москве, заскочил
-                                        побриться,
-                                        чтобы было видно новую
-                                        татуировку!
+                                <blockquote class="feedback__item slider__item">
+                                    <p class="feedback__authorPhoto">
+                                        <img class="feedback__authorImg" src="" width="250" height="160"
+                                            alt="Фото Трэвиса Баркера">
                                     </p>
-                                </div>
-                            </blockquote>
+                                    <div class="feedback__text">
+                                        <b class="feedback__authorsName">Трэвис Баркер</b>
+                                        <p class="feedback__comment">Спасибо за лысину! Был проездом в Москве, заскочил
+                                            побриться,
+                                            чтобы было видно новую
+                                            татуировку!
+                                        </p>
+                                    </div>
+                                </blockquote>
 
-                            <blockquote class="feedback__item slider__item">
-                                <p class="feedback__authorPhoto">
-                                    <img class="feedback__authorImg" src="img/Barker-full.jpg" width="" height=""
-                                        alt="Фото 2">
-                                </p>
-                                <div class="feedback__text">
-                                    <b class="feedback__authorsName">2
-
-                                    </b>
-                                    <p class="feedback__comment">
-                                        лалалалалалалаллалалаллалаллалалаллалалалалалалалаллалалалалаллалалаллалалалаллалалалалаллалалаллалалалалаллалал
+                                <blockquote class="feedback__item slider__item">
+                                    <p class="feedback__authorPhoto">
+                                        <img class="feedback__authorImg" src="img/Barker-full.jpg" width="" height=""
+                                            alt="Фото 2">
                                     </p>
-                                </div>
-                            </blockquote>
+                                    <div class="feedback__text">
+                                        <b class="feedback__authorsName">22222 222222</b>
+                                        <p class="feedback__comment">
+                                            Был проездом в Москве, заскочил
+                                            побриться,
+                                            чтобы было видно новую
+                                            татуировку!
+                                        </p>
+                                    </div>
+                                </blockquote>
 
-                            <blockquote class="feedback__item slider__item">
-                                <p class="feedback__authorPhoto">
-                                    <img class="feedback__authorImg" src="img/Barker-full.jpg" width="" height=""
-                                        alt="Фото Трэвиса Баркера">
-                                </p>
-                                <div class="feedback__text">
-                                    <b class="feedback__authorsName">3</b>
-                                    <p class="feedback__comment">
-                                        фафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафафа
+                                <blockquote class="feedback__item slider__item">
+                                    <p class="feedback__authorPhoto">
+                                        <img class="feedback__authorImg" src="img/Barker-full.jpg" width="" height=""
+                                            alt="Фото Трэвиса Баркера">
                                     </p>
-                                </div>
-                            </blockquote>
+                                    <div class="feedback__text">
+                                        <b class="feedback__authorsName">33333333 3333333</b>
+                                        <p class="feedback__comment">
+                                            Спасибо за лысину!
+                                        </p>
+                                    </div>
+                                </blockquote>
+                            </div>
                         </div>
-
                         <button class="feedback__rightArrow feedback__arrowButton">
                             <span class="feedbackArrow__text feedbackArrow__text--right">Следующий слайд</span>
                         </button>

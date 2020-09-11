@@ -390,15 +390,19 @@
     background-color: #242424;
   }
 
+  .wrapperAS {
+    overflow: hidden;
+  }
+
   .advantages__list {
     display: flex;
-    flex-direction: column;
+    width: 100%;
   }
 
   .advantages__item {
-    width: auto;
+    width: 100%;
     padding: 44px 0 0 0;
-
+    flex-shrink: 0;
     background-position: 50% 20%;
   }
 
@@ -408,9 +412,6 @@
     background-position: 50% 20%;
   }
 
-  .advantages__item:not(:first-child) {
-    display: none;
-  }
 
   .advantages__title {
     margin: 0 0 22px 0;
