@@ -1,0 +1,326 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans Narrow", sans-serif;
+    color: #000000;
+
+    background-color: gray;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+}
+
+.appointment {
+    position: relative;
+    width: 1200px;
+    z-index: 10;
+
+    background-color: #f8f5f2;
+}
+
+.appointment__wrapper {
+    margin: 0 120px;
+}
+
+.appointment__form {
+    box-sizing: border-box;
+    padding: 54px 0 87px 0;
+}
+
+.appointment__titleButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appointment__title {
+    padding: 0;
+    margin: 0;
+
+    font-size: 30px;
+    font-weight: bold;
+    line-height: normal;
+    color: black;
+    text-transform: uppercase;
+}
+
+.button {
+    display: inline-block;
+    width: 160px;
+    padding: 12px 5px 12px 5px;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    outline: 1px solid #c9bdb1;
+    border: none;
+    box-sizing: border-box;
+}
+
+.button:focus,
+.button:hover {
+    outline: 1px solid #eae5e2;
+}
+
+.button:active {
+    outline: 1px solid #ede4de;
+    background-color: #ede4de;
+    color: #e3dcd5;
+}
+
+.appointment__names {
+    display: flex;
+    margin: 67px 0 35px 0;
+}
+
+.firstName,
+.secondName,
+.middleName {
+    width: 293px;
+}
+
+.firstName,
+.secondName,
+.middleName,
+.phone,
+.email {
+    height: 68px;
+    margin: 0;
+    padding-left: 17px;
+
+    outline: 1px solid #e5ddd5;
+    border: none;
+}
+
+.firstName:focus,
+.secondName:focus,
+.middleName:focus,
+.phone:focus,
+.email:focus,
+.info:focus,
+.firstName:hover,
+.secondName:hover,
+.middleName:hover,
+.phone:hover,
+.email:hover,
+.info:hover {
+    outline: 1px solid #eae5e2;
+}
+
+.firstName:active,
+.secondName:active,
+.middleName:active,
+.phone:active,
+.email:active,
+.info:active {
+    outline: 1px solid #f4f4f4;
+}
+
+.appointment__firstName,
+.appointment__secondName,
+.appointment__phone {
+    margin-right: 30px;
+}
+
+.appointment__contacts {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.phone,
+.email {
+    width: 460px;
+}
+
+.info {
+    width: 100%;
+    padding: 25px 0 0 25px;
+
+    outline: 1px solid #e5ddd5;
+    border: none;
+    box-sizing: border-box;
+}
+
+.appointment__info {
+    margin: 0;
+}
+
+.appointmentChooseBeard {
+    padding: 0;
+    margin: 75px 0 62px 0;
+}
+
+.appointmentChooseBeard__title,
+.appointmentExtraServices__title {
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: normal;
+}
+
+.beards__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 51px 0 0 0;
+}
+
+.beards__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.beards__item:first-child {
+    margin-left: 46px;
+}
+
+.beards__item:last-child {
+    margin-right: 50px;
+}
+
+.chooseBeard__radio,
+.chooseBeard__label {
+    margin: 0 auto 30px auto;
+}
+
+.appointmentExtraServices {
+    margin: 0;
+    padding: 0;
+}
+
+.appointmentExtraServices__title {
+    margin: 0 0 69px 0;
+}
+
+.extraServices__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.extraServices__item {
+    width: 33%;
+    margin: 0 0 47px 0;
+}
+
+.chooseBeard__label,
+.extraServices__label {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.extraServices__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.extraServices__checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.extraServices__checkbox+label::before {
+    content: "";
+    width: 31px;
+    height: 31px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #e5ddd5;
+    margin-right: 25px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    box-sizing: border-box;
+}
+
+.extraServices__checkbox:not(:checked):not(:disabled)+label:focus::before {
+    border-color: #eae5e2;
+}
+
+.extraServices__checkbox:not(:checked):not(:disabled)+label:hover::before {
+    border-color: #eae5e2;
+}
+
+.extraServices__checkbox:not(:checked):not(:disabled):active+label::before {
+    border-color: #d5c9bd;
+    background-color: #d5c9bd;
+    background-image: url('img/checked.png');
+    background-size: 22px 16px;
+}
+
+.extraServices__checkbox:checked+label::before {
+    background-image: url('img/checked.png');
+    background-size: 22px 16px;
+    border: none;
+}
+
+.extraServices__checkbox:checked+label:focus::before {
+    border-color: #eae5e2;
+}
+
+.extraServices__checkbox:checked+label:hover::before {
+    border-color: #eae5e2;
+}
+
+.extraServices__checkbox:checked+label:active::before {
+    background-color: #d5c9bd;
+    background-image: none;
+    background-size: 22px 16px;
+    border: none;
+}
+
+.appointment__sendApplication {
+    width: 100%;
+    height: 70px;
+    margin: 33px 0 0 0;
+    padding: 0;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+
+    border: none;
+    background-color: #826550;
+    color: white
+}
+
+.appointment__sendApplication:focus,
+.appointment__title.appointment__sendApplication:hover {
+    background-color: #6a4d38;
+    outline: none;
+}
+
+.appointment__sendApplication:active {
+    background-color: #6a4d38;
+    color: #978374;
+    outline: none;
+}
+
+.appointment__sendApplication:disabled {
+    background-color: #aeaeae;
+    outline: none;
+}

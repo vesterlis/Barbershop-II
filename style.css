@@ -290,13 +290,6 @@ input:focus::placeholder {
   box-sizing: border-box;
 }
 
-.yourAccount__rememberMeCheckbox:checked+label::before {
-  background-color: #d5c9bd;
-  background-image: url('img/checked.png');
-  background-size: 22px 16px;
-  border: none;
-}
-
 .yourAccount__rememberMeCheckbox:not(:checked):not(:disabled)+label:focus::before {
   border-color: #eae5e2;
 }
@@ -305,10 +298,34 @@ input:focus::placeholder {
   border-color: #eae5e2;
 }
 
-.yourAccount__rememberMeCheckbox:not(:disabled):active+label::before {
+.yourAccount__rememberMeCheckbox:not(:checked):not(:disabled):active+label::before {
   border-color: #d5c9bd;
   background-color: #d5c9bd;
+  background-image: url('img/checked.png');
+  background-size: 22px 16px;
 }
+
+.yourAccount__rememberMeCheckbox:checked+label::before {
+  background-image: url('img/checked.png');
+  background-size: 22px 16px;
+  border: none;
+}
+
+.yourAccount__rememberMeCheckbox:checked+label:focus::before {
+  border-color: #eae5e2;
+}
+
+.yourAccount__rememberMeCheckbox:checked+label:hover::before {
+  border-color: #eae5e2;
+}
+
+.yourAccount__rememberMeCheckbox:checked+label:active::before {
+  background-color: #d5c9bd;
+  background-image: none;
+  background-size: 22px 16px;
+  border: none;
+}
+
 
 .yourAccount__buttons {
   display: none;

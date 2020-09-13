@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="form-desktop.css">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="form-tablet.css" />
+        <link rel="stylesheet" href="form-mobile.css" />
+        <title>Барбершоп &laquoБородинский&raquo</title>
+    </head>
+
+    <body class="page">
+
+        <div class="appointment appointmentPosition">
+            <div class="appointment__wrapper">
+                <form class="appointment__form" action="#" method="POST">
+                    <div class="appointment__titleButton">
+                        <p class="appointment__title">Запись на стрижку</p>
+                        <a class="appointment__toMainPage button" href="#">на Главную</a>
+                    </div>
+
+                    <div class="appointment__names">
+                        <label class="visually-hidden" for="client-Fname">Имя</label>
+                        <input class="appointment__firstName firstName" type="text" name="firstName" placeholder="Имя"
+                            id="client-Fname" autofocus>
+
+                        <label class="visually-hidden" for="client-Sname">Фамилия</label>
+                        <input class="appointment__secondName secondName" type="text" name="secondName"
+                            placeholder="Фамилия" id="client-Sname">
+
+                        <label class="visually-hidden" for="client-Mname">Отчество</label>
+                        <input class="appointment__middleName middleName" type="text" name="middleName"
+                            placeholder="Отчество" id="client-Mname">
+                    </div>
+
+                    <div class="appointment__contacts">
+                        <label class="visually-hidden" for="client-phone">Контактный телефон</label>
+                        <input class="appointment__phone phone" type="tel" name="phone" placeholder="Контактный телефон"
+                            id="client-phone">
+
+                        <label class="visually-hidden" for="client-email">Контактный e-mail</label>
+                        <input class="appointment__email email" type="email" name="email"
+                            placeholder="Контактный e-mail" id="client-email">
+                    </div>
+
+                    <label class="visually-hidden" for="info-for-master"></label>
+                    <textarea class="appointment__info info" name="info" placeholder="Доп. информация для мастера"
+                        id="info-for-master" rows="10"></textarea>
+
+                    <div class="appointmentChooseBeard">
+                        <p class="appointmentChooseBeard__title">Выберите модель бороды:</p>
+
+                        <div class="beards__list">
+                            <div class="beards__item admiral">
+                                <input class="chooseBeard__radio" type="radio" name="model-of-beard" id="admiral"
+                                    value="адмирал" checked>
+                                <label class="chooseBeard__label" for="admiral-beard">адмирал</label>
+                                <img class="beard-img" src="img/admiral-beard.png" width="" height="">
+                            </div>
+
+                            <div class="beards__item woodsman">
+                                <input class="chooseBeard__radio" type="radio" name="model-of-beard" value="лесоруб">
+                                <label class="chooseBeard__label" for="woodsman-beard">лесоруб</label>
+                                <img class="beard-img" src="img/woodsman-beard.png" width="" height="">
+                            </div>
+
+                            <div class="beards__item polarman">
+                                <input class="chooseBeard__radio" type="radio" name="model-of-beard" value="полярник">
+                                <label class="chooseBeard__label" for="polarman-beard">полярник</label>
+                                <img class="beard-img" src="img/polarman-beard.png" width="" height="">
+                            </div>
+
+                            <div class="beards__item boyar">
+                                <input class="chooseBeard__radio" type="radio" name="model-of-beard" value="боярин">
+                                <label class="chooseBeard__label" for="boyar-beard">боярин</label>
+                                <img class="beard-img" src="img/boyar-beard.png" width="" height="">
+                            </div>
+
+                            <div class="beards__item wiseman">
+                                <input class="chooseBeard__radio" type="radio" name="model-of-beard" value="мудрец">
+                                <label class="chooseBeard__label" for="wiseman-beard">мудрец</label>
+                                <img class="beard-img" src="img/wiseman-beard.png" width="" height="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="appointmentExtraServices">
+                        <p class="appointmentExtraServices__title">Дополнительные услуги</p>
+
+                        <div class="extraServices__list">
+                            <div class="extraServices__item">
+                                <input class="extraServices__checkbox" type="checkbox" name="color" id="color-beard"
+                                    checked>
+                                <label class="extraServices__label" for="color-beard">Подкрасить
+                                    бороду</label>
+                            </div>
+
+                            <div class="extraServices__item">
+                                <input class="extraServices__checkbox" type="checkbox" name="comb" id="comb-beard">
+                                <label class="extraServices__label" for="comb-beard">Причесать бороду</label>
+                            </div>
+
+                            <div class="extraServices__item">
+                                <input class="extraServices__checkbox" type="checkbox" name="remove" id="remove-gray">
+                                <label class="extraServices__label" for="remove-gray">Убрать седину</label>
+                            </div>
+
+                            <div class="extraServices__item">
+                                <input class="extraServices__checkbox" type="checkbox" name="curl" id="curl-mustache"
+                                    checked>
+                                <label class="extraServices__label" for="curl-mustache">Накрутить усы</label>
+                            </div>
+
+                            <div class="extraServices__item">
+                                <input class="extraServices__checkbox" type="checkbox" name="cut" id="cut-templs">
+                                <label class="extraServices__label" for="cut-templs">Подровнять виски</label>
+                            </div>
+
+                            <div class="extraServices__item">
+                                <input class="extraServices__checkbox" type="checkbox" name="polish"
+                                    id="polish-baldness">
+                                <label class="extraServices__label" for="polish-baldness">Отполировать
+                                    лысину</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="appointment__sendApplication" type="submit" name="send">Отправить
+                        заявку</button>
+
+                </form>
+
+            </div>
+
+    </body>
+
+</html>
