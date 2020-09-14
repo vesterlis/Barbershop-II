@@ -1,0 +1,144 @@
+@media screen and (max-width: 767px) {
+
+    .appointment {
+        width: 320px;
+    }
+
+    .appointment__wrapper {
+        margin: 0 20px;
+    }
+
+    .appointment__form {
+        padding: 34px 0 39px 0;
+    }
+
+    .appointment__titleButton {
+        justify-content: center;
+    }
+
+    .appointment__title {
+        font-size: 30px;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .appointment__names {
+        flex-direction: column;
+        margin: 34px 0 32px 0;
+    }
+
+    .firstName {
+        order: 2;
+    }
+
+    .secondName {
+        order: 1;
+    }
+
+    .middleName {
+        order: 3;
+    }
+
+    .firstName,
+    .secondName,
+    .middleName,
+    .phone {
+        margin-bottom: 6px;
+    }
+
+    .firstName,
+    .secondName,
+    .middleName,
+    .phone,
+    .email {
+        width: auto;
+        height: 48px;
+    }
+
+    .appointment__firstName,
+    .appointment__secondName,
+    .appointment__phone {
+        margin-right: 0;
+    }
+
+    .appointment__contacts {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+
+    .phone,
+    .email {
+        width: auto;
+    }
+
+    .info {
+        padding: 16px 0 0 18px;
+    }
+
+    .appointmentChooseBeard {
+        padding: 0;
+        margin: 43px 0 49px 0;
+    }
+
+    .appointmentChooseBeard__title,
+    .appointmentExtraServices__title {
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    .beards__list {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 42px 0 0 0;
+    }
+
+    .beards__item {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 30px 0;
+        width: 30%;
+    }
+
+    .beards__item:first-child,
+    .beards__item:nth-child(4) {
+        margin-left: 23px;
+    }
+
+    .beards__item:last-child {
+        margin: none;
+    }
+
+    .wiseman {
+        margin: 0;
+    }
+
+    .appointmentExtraServices__title {
+        margin: 0 0 38px 0;
+    }
+
+    .extraServices__list {
+        flex-direction: column;
+    }
+
+    .extraServices__item {
+        width: auto;
+        margin: 0 0 20px 0;
+    }
+
+    .chooseBeard__label,
+    .extraServices__label {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .appointment__sendApplication {
+        margin: 17px 0 0 0;
+
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+}

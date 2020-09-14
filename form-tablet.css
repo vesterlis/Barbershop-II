@@ -1,0 +1,47 @@
+@media screen and (min-width: 768px) and (max-width: 1299px) {
+
+    .appointment {
+        width: 768px;
+    }
+
+    .appointment__wrapper {
+        margin: 0 64px;
+    }
+
+    .firstName,
+    .secondName,
+    .middleName {
+        width: 213px;
+    }
+
+    .appointment__firstName,
+    .appointment__secondName,
+    .appointment__phone {
+        margin: 0;
+    }
+
+    .appointment__contacts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .appointment__names,
+    .appointment__phone,
+    .appointment__names {
+        margin-bottom: 35px;
+    }
+
+    .phone,
+    .email {
+        width: auto;
+    }
+
+    .appointmentChooseBeard {
+        margin: 58px 0 62px 0;
+    }
+
+    .extraServices__item {
+        width: 50%;
+    }
+
+}
