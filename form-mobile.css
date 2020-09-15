@@ -172,4 +172,26 @@
         order: 5;
     }
 
+    .successPopUp {
+        width: 320px;
+    }
+
+    .popUp__wrapper--success {
+        margin: 0;
+    }
+
+    .failurePopUp__button,
+    .successPopUp__button {
+        display: block;
+    }
+
+    .failurePopUp__button {
+        width: 180px;
+    }
+
+    .successPopUp__button {
+        margin: 36px auto 0 auto;
+        padding: 0 38px 0 36px;
+    }
+
 }

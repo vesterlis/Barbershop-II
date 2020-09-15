@@ -18,7 +18,7 @@
             <div class="appointment__wrapper">
                 <form class="appointment__form" action="#" method="POST">
                     <div class="appointment__titleButton">
-                        <p class="appointment__title">Запись на стрижку</p>
+                        <h2 class="appointment__title">Запись на стрижку</h2>
                         <a class="appointment__toMainPage button" href="#">на Главную</a>
                     </div>
 
@@ -51,7 +51,7 @@
                         id="info-for-master" rows="10"></textarea>
 
                     <div class="appointmentChooseBeard">
-                        <p class="appointmentChooseBeard__title inner-title">Выберите модель бороды:</p>
+                        <h3 class="appointmentChooseBeard__title inner-title">Выберите модель бороды:</h3>
 
                         <div class="beards__list">
                             <div class="beards__item admiral">
@@ -88,7 +88,7 @@
                     </div>
 
                     <div class="appointmentExtraServices">
-                        <p class="appointmentExtraServices__title inner-title">Дополнительные услуги:</p>
+                        <h3 class="appointmentExtraServices__title inner-title">Дополнительные услуги:</h3>
 
                         <div class="extraServices__list">
                             <div class="extraServices__item color-beard">
@@ -134,6 +134,32 @@
                 </form>
 
             </div>
+        </div>
+
+        <div class="appointment__failurePopUp failurePopUp">
+            <div class="popUp__wrapper popUp__wrapper--failure">
+                <h2 class="failurePopUp__title appointment__title">Неудача</h2>
+                <p class="failurePopUp_text">Что-то пошло не так.
+                    <br>
+                    Проверьте выделенные
+                    <br>
+                    красным поля формы.</p>
+                <button class="failurePopUp__button button" type="submit" name="ok">Ок</button>
+            </div>
+        </div>
+
+        <div class="appointment__successPopUp successPopUp">
+            <div class="popUp__wrapper popUp__wrapper--success">
+                <h2 class="successPopUp__title appointment__title">Это успех!</h2>
+                <p class="successPopUp_text">Ваша заявка отправлена.
+                    <br>
+                    Ожидайте, мы свяжемся с вами как только
+                    <br>
+                    будет минутка.</p>
+                <button class="successPopUp__button button" type="submit" name="close-popUp">Закрыть
+                    окно</button>
+            </div>
+        </div>
 
     </body>
 

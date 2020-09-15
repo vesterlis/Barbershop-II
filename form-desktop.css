@@ -335,18 +335,90 @@ body {
 }
 
 .appointment__sendApplication:focus,
-.appointment__title.appointment__sendApplication:hover {
+.appointment__title.appointment__sendApplication:hover,
+.failurePopUp__button:focus,
+.failurePopUp__button:hover,
+.success__button:focus,
+.successPopUp__button:hover {
     background-color: #6a4d38;
     outline: none;
 }
 
-.appointment__sendApplication:active {
+.appointment__sendApplication:active,
+.failurePopUp__button:active,
+.successPopUp__button:active {
     background-color: #6a4d38;
     color: #978374;
     outline: none;
 }
 
-.appointment__sendApplication:disabled {
+.appointment__sendApplication:disabled,
+.failurePopUp__button:disabled,
+.successPopUp__button:disabled {
     background-color: #aeaeae;
     outline: none;
+}
+
+.failurePopUp,
+.successPopUp {
+    height: 317px;
+    padding: 60px 0 47px 0;
+
+    box-sizing: border-box;
+    box-shadow: 0 30px 50px 0 rgba(0, 1, 1, 0.75);
+    background-color: #ffffff;
+}
+
+.failurePopUp {
+    width: 320px;
+}
+
+.successPopUp {
+    width: 460px;
+}
+
+.popUp__wrapper--failure,
+.popUp__wrapper--success {
+    display: flex;
+    flex-direction: column;
+}
+
+.popUp__wrapper--success {
+    margin: 0 70px;
+}
+
+.failurePopUp__title,
+.successPopUp__title {
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+.failurePopUp_text,
+.successPopUp_text {
+    margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.failurePopUp__button,
+.successPopUp__button {
+    height: 50px;
+
+    color: #ffffff;
+
+    background-color: #826550;
+}
+
+.failurePopUp__button {
+    width: 150px;
+    margin: 36px auto 0 auto;
+}
+
+.successPopUp__button {
+    width: auto;
+    margin-top: 36px;
 }
