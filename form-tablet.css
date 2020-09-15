@@ -40,6 +40,14 @@
         margin: 58px 0 62px 0;
     }
 
+    .inner-title::before {
+        margin-right: 30px;
+    }
+    
+    .inner-title::after {
+        margin-left: 30px;
+    }
+
     .extraServices__item {
         width: 50%;
     }
