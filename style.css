@@ -218,12 +218,12 @@ header {
 .yourAccount__login:hover,
 .yourAccount__password:focus,
 .yourAccount__password:hover {
-  outline: 1px solid #eae5e2;
+  outline: 1px solid #d5c9bd;
 }
 
 .yourAccount__login:active,
 .yourAccount__password:active {
-  outline: 1px solid #f4f4f4;
+  outline: 1px solid #999999;
 }
 
 input::placeholder {

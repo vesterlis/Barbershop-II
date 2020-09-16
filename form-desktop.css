@@ -121,7 +121,7 @@ body {
 .phone:hover,
 .email:hover,
 .info:hover {
-    outline: 1px solid #eae5e2;
+    outline: 1px solid #d5c9bd;
 }
 
 .firstName:active,
@@ -130,7 +130,7 @@ body {
 .phone:active,
 .email:active,
 .info:active {
-    outline: 1px solid #f4f4f4;
+    outline: 1px solid #999999;
 }
 
 .appointment__firstName,

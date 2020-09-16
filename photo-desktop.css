@@ -1,0 +1,184 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans Narrow", sans-serif;
+    color: #000000;
+
+    background-color: gray;
+}
+
+.ourWorks {
+    position: relative;
+    width: 1200px;
+    z-index: 10;
+    padding: 54px 0 87px 0;
+
+    box-sizing: border-box;
+    background-color: #f8f5f2;
+}
+
+.ourWorks__wrapper {
+    margin: 0 10%;
+}
+
+.ourWorks__titleButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ourWorks__title {
+    padding: 0;
+    margin: 0;
+
+    font-size: 40px;
+    font-weight: bold;
+    line-height: normal;
+    color: black;
+    text-transform: uppercase;
+}
+
+.button {
+    display: inline-block;
+    width: 160px;
+    padding: 12px 5px 12px 5px;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    outline: 1px solid #c9bdb1;
+    border: none;
+    box-sizing: border-box;
+}
+
+.button:focus,
+.button:hover {
+    outline: 1px solid #eae5e2;
+}
+
+.button:active {
+    outline: 1px solid #ede4de;
+    background-color: #ede4de;
+    color: #e3dcd5;
+}
+
+.workOfMonth {
+    border: 1px solid #c9bdb1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.workOfMonthPosition {
+    margin: 79px 0 41px 0;
+}
+
+.workOfMonth__description {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0 0 0 40px;
+}
+
+.workOfMonth__title,
+.ourWorks__title {
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.workOfMonth__title {
+    margin: 133px 0 0 0;
+    padding: 0;
+}
+
+.workOfMonth__text,
+.ourWorks__text {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.workOfMonth__text {
+    margin: 33px 0 130px 0;
+}
+
+.ourWorks__text {
+    margin-top: 35px;
+}
+
+.workOfMonth__iconsSets,
+.ourWorks__iconsSets {
+    display: flex;
+    margin-top: auto;
+}
+
+.workOfMonth__iconsSets {
+    margin-bottom: 30px;
+}
+
+.workOfMonth__iconSet,
+.ourWorks__iconSet {
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.workOfMonth__iconItem,
+.ourWorks__iconItem {
+    margin-right: 15px;
+}
+
+.ourWorks__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ourWorks__item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+}
+
+.ourWorks__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.ourWorks__description {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 34px 0 30px 35px;
+
+    border: 1px solid #c9bdb1;
+    border-top: none;
+    box-sizing: border-box;
+}
+
+.workOfMonth__typeofService,
+.ourWorks__typeofService {
+    margin: 0;
+    font-size: 16px;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+
+
+/*
+.Maltsev .ourWorks_text {
+    margin-bottom: 59px;
+}
+
+.Ivanych .ourWorks_text {
+    margin-bottom: 84px;
+}
+
+.Vinston .ourWorks_text {
+    margin-bottom: 38px;
+}
