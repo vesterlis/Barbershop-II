@@ -19,7 +19,8 @@ body {
     background-color: #f8f5f2;
 }
 
-.ourWorks__wrapper {
+.ourWorks__wrapper,
+.pricelist__wrapper {
     margin: 0 10%;
 }
 
@@ -28,7 +29,8 @@ body {
     justify-content: space-between;
 }
 
-.ourWorks__title {
+.ourWorks__title,
+.pricelist__title {
     padding: 0;
     margin: 0;
 
@@ -69,9 +71,10 @@ body {
 }
 
 .workOfMonth {
-    border: 1px solid #c9bdb1;
     display: flex;
     justify-content: flex-start;
+
+    border: 1px solid #c9bdb1;
 }
 
 .workOfMonthPosition {
@@ -163,22 +166,111 @@ body {
 .workOfMonth__typeofService,
 .ourWorks__typeofService {
     margin: 0;
+
     font-size: 16px;
     line-height: 27px;
     text-transform: uppercase;
 }
 
+.pricelist {
+    width: 1200px;
+    z-index: 10;
 
-
-/*
-.Maltsev .ourWorks_text {
-    margin-bottom: 59px;
+    background-color: #353535;
 }
 
-.Ivanych .ourWorks_text {
-    margin-bottom: 84px;
+.pricelistPosition {
+    padding: 77px 0 83px 0;
 }
 
-.Vinston .ourWorks_text {
-    margin-bottom: 38px;
+.pricelist__title {
+    color: #ffffff;
+}
+
+.pricelist__table {
+    display: table;
+    margin-right: 60px;
+
+    font-size: 20px;
+    line-height: 27px;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    border: 1px solid #4a4a4a;
+    empty-cells: show;
+}
+
+.pricelist__timeBlockPosition {
+    margin-top: 54px;
+}
+
+.pricelist__table-colgroup {
+    display: table-column-group;
+}
+
+.pricelist__table-col {
+    display: table-column;
+}
+
+.pricelist__table-tbody {
+    display: table-row-group;
+}
+
+.pricelist__table-tr {
+    display: table-row;
+}
+
+.pricelist__table-th {
+    display: table-cell;
+    padding: 15px 0 15px 0;
+
+
+    text-align: center;
+    opacity: 0.3;
+
+    border: 1px solid #4a4a4a;
+}
+
+.pricelist__table-td {
+    display: table-cell;
+    padding: 15px 0 15px 20px;
+
+    text-align: left;
+
+    border: 1px solid #4a4a4a;
+}
+
+.pricelist__table,
+.time {
+    color: #ffffff;
+
+    background-color: #353535;
+}
+
+.typeOfService {
+    font-weight: bold;
+}
+
+
+.mobile-only {
+    display: none;
+
+    font-weight: normal;
+}
+
+.pricelist__timeBlock {
+    display: flex;
+}
+
+.time {
+    padding: 35px 62px 0 65px;
+
+    border: 1px solid #4a4a4a;
+}
+
+.time__sales-hours {
+    margin-top: 31px;
+
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
 }
