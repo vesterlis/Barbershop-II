@@ -1,0 +1,115 @@
+@media screen and (min-width: 768px) and (max-width: 1299px) {
+
+    .ourWorks {
+        width: 768px;
+    }
+
+    .ourWorks__wrapper,
+    .pricelist__wrapper {
+        margin: 0 64px;
+    }
+
+    .workOfMonthPosition {
+        margin: 49px 0 41px 0;
+    }
+
+    .workOfMonth__description {
+        margin: 0 0 0 50px;
+    }
+
+    .workOfMonth__subtitle {
+        margin: 50px 0 0 0;
+    }
+
+    .workOfMonth__text {
+        width: 80%;
+        margin: 33px 0 130px 0;
+    }
+
+    .workOfMonth__iconsSets,
+    .ourWorks__iconsSets {
+        flex-wrap: wrap;
+    }
+
+    .workOfMonth__iconsSets {
+        margin: auto 0 0 0;
+    }
+
+    .workOfMonth__iconSet,
+    .ourWorks__iconSet {
+
+        width: 35%;
+        margin: 0 30px 25px 0;
+    }
+
+    .workOfMonth__iconSet:nth-child(1) {
+        margin-left: 12px;
+    }
+
+    .ourWorks__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .ourWorks__item {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ourWorks__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 41px;
+    }
+
+    .ourWorks__description {
+
+        padding: 44px 0 0 51px;
+
+        border: 1px solid #c9bdb1;
+        border-left: none;
+    }
+
+    .pricelist {
+        width: 768px;
+        z-index: 10;
+
+        background-color: #353535;
+    }
+
+    .pricelistPosition {
+        padding: 90px 0 56px 0;
+    }
+
+    .pricelist__table {
+        margin-right: 0;
+    }
+
+    .pricelist__timeBlock {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pricelist__time {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .time {
+        margin-top: 9px;
+        padding: 21px 0 21px 27px;
+
+        border: 1px solid #4a4a4a;
+    }
+
+    .time__sales-hours {
+        margin: 0 0 0 87px;
+        padding: 0;
+
+        font-size: 30px;
+        line-height: normal;
+        font-weight: bold;
+        align-self: center;
+        text-transform: uppercase;
+    }
+}

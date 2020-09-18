@@ -1,0 +1,154 @@
+@media screen and (max-width: 767px) {
+
+    .ourWorks {
+        width: 320px;
+        padding: 34px 0 34px 0;
+    }
+
+    .ourWorks__wrapper,
+    .pricelist__wrapper {
+        margin: 0 20px;
+    }
+
+    .ourWorks__titleButton {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ourWorks__title,
+    .pricelist__title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .workOfMonth__subtitle {
+        margin-top: 0;
+    }
+
+    .button {
+        display: none;
+
+    }
+
+    .workOfMonth {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        border: 1px solid #c9bdb1;
+    }
+
+    .workOfMonthPosition {
+        margin: 33px 0 20px 0;
+    }
+
+    .workOfMonth__description {
+        margin: 0 0 0 22px;
+    }
+
+    .workOfMonth__subtitle {
+        margin: 24px 0 0 12px;
+    }
+
+    .workOfMonth__text {
+        width: 90%;
+        margin: 21px 0 23px 12px;
+    }
+
+    .workOfMonth__iconsSets,
+    .ourWorks__iconsSets {
+        flex-wrap: wrap;
+        margin: auto 0 0 0;
+    }
+
+    .workOfMonth__iconSet,
+    .ourWorks__iconSet {
+
+        width: 35%;
+        margin: 0 30px 25px 0;
+    }
+
+    .workOfMonth__iconSet:nth-child(1) {
+        margin-left: 12px;
+    }
+
+    .ourWorks__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .ourWorks__text {
+        margin-top: 26px;
+    }
+
+    .ourWorks__list {
+        flex-direction: column;
+    }
+
+    .ourWorks__item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .ourWorks__description {
+        padding: 29px 0 0 23px;
+    }
+
+    .pricelist {
+        width: 320px;
+    }
+
+    .pricelistPosition {
+        padding: 70px 0 19px 0;
+    }
+
+    .pricelist__table {
+        margin-right: 0;
+        border: none;
+    }
+
+    .pricelist__table-th,
+    .cell-none {
+        display: none;
+    }
+
+    .typeOfService {
+        text-align: left;
+    }
+
+    .pricelist__table-td {
+        border: none;
+        padding: 15px 0 15px 0;
+    }
+
+    .price {
+        text-align: right;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .pricelist__timeBlockPosition {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .pricelist__time {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .time {
+        padding: 0;
+    }
+
+    .time__img   {
+        padding: 21px 0 21px 27px;
+    }
+
+    .time__sales-hours {
+        padding: 0;
+        margin: 0 0 0 35px;
+        align-self: center;
+        text-align: start;
+    }
+}
