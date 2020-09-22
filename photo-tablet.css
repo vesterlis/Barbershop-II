@@ -96,10 +96,13 @@
     }
 
     .time {
+        width: auto;
         margin-top: 9px;
         padding: 21px 0 21px 27px;
 
         border: 1px solid #4a4a4a;
+
+        text-align: left;
     }
 
     .time__sales-hours {
@@ -111,5 +114,6 @@
         font-weight: bold;
         align-self: center;
         text-transform: uppercase;
+        text-align: left;
     }
 }

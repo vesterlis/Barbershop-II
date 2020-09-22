@@ -138,10 +138,12 @@
     }
 
     .time {
+        margin-top: 30px;
         padding: 0;
+        width: 280px;
     }
 
-    .time__img   {
+    .time__img {
         padding: 21px 0 21px 27px;
     }
 

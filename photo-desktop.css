@@ -81,6 +81,10 @@ body {
     margin: 79px 0 41px 0;
 }
 
+.workOfMonth__img {
+    vertical-align: top;
+}
+
 .workOfMonth__description {
     display: flex;
     flex-direction: column;
@@ -189,8 +193,13 @@ body {
     color: #ffffff;
 }
 
+.pricelist__timeBlock {
+    display: flex;
+}
+
 .pricelist__table {
     display: table;
+    flex-grow: 1;
     margin-right: 60px;
 
     font-size: 20px;
@@ -222,6 +231,7 @@ body {
 }
 
 .pricelist__table-th {
+    width: 70px;
     display: table-cell;
     padding: 15px 0 15px 0;
 
@@ -239,6 +249,10 @@ body {
     text-align: left;
 
     border: 1px solid #4a4a4a;
+}
+
+.pricelist__table-td.price {
+    width: 150px;
 }
 
 .pricelist__table,
@@ -259,17 +273,17 @@ body {
     font-weight: normal;
 }
 
-.pricelist__timeBlock {
-    display: flex;
-}
-
 .time {
-    padding: 35px 62px 0 65px;
+    width: 270px;
+    padding: 35px 0 0 0;
 
     border: 1px solid #4a4a4a;
+
+    text-align: center;
 }
 
 .time__sales-hours {
+    padding: 0 20%;
     margin-top: 31px;
 
     font-size: 20px;
