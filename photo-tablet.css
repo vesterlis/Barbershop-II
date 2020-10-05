@@ -1,7 +1,7 @@
 @media screen and (min-width: 768px) and (max-width: 1299px) {
 
     .ourWorks {
-        width: 768px;
+        width: auto;
     }
 
     .ourWorks__wrapper,
@@ -71,7 +71,7 @@
     }
 
     .pricelist {
-        width: 768px;
+        width: auto;
         z-index: 10;
 
         background-color: #353535;
@@ -79,6 +79,17 @@
 
     .pricelistPosition {
         padding: 90px 0 56px 0;
+    }
+
+    .wing-pricelist {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        border-top: 5vw solid #f8f5f2;
+        border-left: 50vw solid transparent;
+        border-right: 50vw solid transparent;
     }
 
     .pricelist__table {
