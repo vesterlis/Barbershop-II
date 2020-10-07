@@ -93,7 +93,7 @@ header {
     @include padding-margin-clear;
 
     background-color: #000000;
-    background-image: url("img/back-desktop.jpg");
+    background-image: url("../../img/back-desktop.jpg");
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: cover;
@@ -150,7 +150,7 @@ header {
         width: 16px;
         margin: 0 19px 0 0;
 
-        background-image: url("img/login-mobile.png");
+        background-image: url("../../img/login-mobile.png");
         background-size: cover;
     }
 }
@@ -202,7 +202,7 @@ header {
 
         border: none;
 
-        background-image: url("img/cross-button.png");
+        background-image: url("../../img/cross-button.png");
         background-color: transparent;
     }
 }
@@ -245,13 +245,13 @@ header {
 
     &__login {
         margin: 27px 0 10px 0;
-        background-image: url("img/User.png");
+        background-image: url("../../img/User.png");
         @include login-password;
     }
 
     &__password {
         margin-bottom: 25px;
-        background-image: url("img/Locked.png");
+        background-image: url("../../img/Locked.png");
         @include login-password;
     }
 
@@ -314,12 +314,12 @@ header {
     &__rememberMeCheckbox:not(:checked):not(:disabled):active+label::before {
         border-color: #d5c9bd;
         background-color: #d5c9bd;
-        background-image: url("img/checked.png");
+        background-image: url("../../img/checked.png");
         background-size: 22px 16px;
     }
 
     &__rememberMeCheckbox:checked+label::before {
-        background-image: url("img/checked.png");
+        background-image: url("../../img/checked.png");
         background-size: 22px 16px;
         border: none;
     }
@@ -517,15 +517,15 @@ input:focus::placeholder {
     }
 
     &__item--fast {
-        background-image: url("img/advantage-1-illustration.png");
+        background-image: url("../../img/advantage-1-illustration.png");
     }
 
     &__item--cool {
-        background-image: url("img/advantage-2-illustration.png");
+        background-image: url("../../img/advantage-2-illustration.png");
     }
 
     &__item--pricey {
-        background-image: url("img/advantage-3-illustration.png");
+        background-image: url("../../img/advantage-3-illustration.png");
     }
 
     &__title {
@@ -787,11 +787,11 @@ input:focus::placeholder {
     }
 
     &--left::after {
-        background-image: url("img/left-arrow.png");
+        background-image: url("../../img/left-arrow.png");
     }
 
     &--right::after {
-        background-image: url("img/right-arrow.png");
+        background-image: url("../../img/right-arrow.png");
     }
 }
 
@@ -901,17 +901,17 @@ input:focus::placeholder {
     outline: 1px solid #3e3e3e;
 
     &--vk {
-        background-image: url("img/vk-icon-big.png");
+        background-image: url("../../img/vk-icon-big.png");
         background-size: 15px 17px;
     }
 
     &--fb {
-        background-image: url("img/facebook-icon-big.png");
+        background-image: url("../../img/facebook-icon-big.png");
         background-size: 10px 21px;
     }
 
     &--inst {
-        background-image: url("img/insta-icon-big.png");
+        background-image: url("../../img/insta-icon-big.png");
         background-size: 19px 19px;
     }
 }
@@ -924,7 +924,7 @@ input:focus::placeholder {
     header {
         min-height: 530px;
 
-        background-image: url("img/back-tablet.jpg");
+        background-image: url("../../img/back-tablet.jpg");
     }
 
     .wrapperHeader {
@@ -1585,11 +1585,11 @@ input:focus::placeholder {
         padding: 20px 0 0 0;
 
         background-color: #242424;
-    }
 
-    .advantages__list {
-        display: flex;
-        width: 100%;
+        &__list {
+            display: flex;
+            width: 100%;
+        }
 
         &__item {
             width: 100%;
@@ -1852,17 +1852,17 @@ input:focus::placeholder {
         @include outline(#3e3e3e);
 
         &--vk {
-            background-image: url("img/vk-icon-big.png");
+            background-image: url("../../img/vk-icon-big.png");
             background-size: 23px 26px;
         }
 
         &--fb {
-            background-image: url("img/facebook-icon-big.png");
+            background-image: url("../../img/facebook-icon-big.png");
             background-size: 18px 39px;
         }
 
         &--inst {
-            background-image: url("img/insta-icon-big.png");
+            background-image: url("../../img/insta-icon-big.png");
             background-size: 36px 36px;
         }
     }
