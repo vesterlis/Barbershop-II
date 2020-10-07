@@ -7,7 +7,7 @@
     header {
         min-height: 470px;
 
-        background-image: url("img/back-tablet.jpg");
+        background-image: url('img/back-tablet.jpg');
     }
 
     .wrapperHeader {
