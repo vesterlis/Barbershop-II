@@ -19,30 +19,30 @@ var jsFiles = [
 function sassTask() {
   return (
     gulp
-      .src("./src/scss/**/*.scss")
-      // .pipe(sourcemaps.init())
-      .pipe(sass())
-      //.pipe(sourcemaps.write("./"))
-      .pipe(concat("style.css"))
+    .src("./src/scss/**/*.scss")
+    // .pipe(sourcemaps.init())
+    .pipe(sass())
+    //.pipe(sourcemaps.write("./"))
+    .pipe(concat("style.css"))
 
-      //Добавить префиксы
-      .pipe(
-        autoprefixer({
-          overrideBrowserslist: ["last 2 versions"],
-          cascade: false,
-        })
-      )
+    //Добавить префиксы
+    .pipe(
+      autoprefixer({
+        overrideBrowserslist: ["last 2 versions"],
+        cascade: false,
+      })
+    )
 
-      //Минификация CSS
-      .pipe(
-        cleanCSS({
-          level: 2,
-        })
-      )
+    //Минификация CSS
+    .pipe(
+      cleanCSS({
+        level: 2,
+      })
+    )
 
-      //Выходная папка для стилей
-      .pipe(gulp.dest("./build/css"))
-      .pipe(browserSync.stream())
+    //Выходная папка для стилей
+    .pipe(gulp.dest("./build/css"))
+    .pipe(browserSync.stream())
   );
 }
 
@@ -52,17 +52,17 @@ function scripts() {
   //Все файлы по шаблону '.src/js/**/*.js'
   return (
     gulp
-      .src(jsFiles)
+    .src(jsFiles)
 
-      //Объединение файлов в один
-      .pipe(concat("script.js"))
+    //Объединение файлов в один
+    .pipe(concat("script.js"))
 
-      //Минификация JS
-      .pipe(terser())
+    //Минификация JS
+    .pipe(terser())
 
-      //Выходная папка для скриптов
-      .pipe(gulp.dest("./build/js"))
-      .pipe(browserSync.stream())
+    //Выходная папка для скриптов
+    .pipe(gulp.dest("./build/js"))
+    .pipe(browserSync.stream())
   );
 }
 
@@ -84,7 +84,7 @@ function watch() {
   //Следить за .js-файлами
   gulp.watch("./src/js/**/*.js", scripts);
   //При изменении HTML запустить синхронизацию
-  gulp.watch("./*.html").on("change", browserSync.reload);
+  gulp.watch("./src/*.html").on("change", browserSync.reload);
 }
 
 gulp.task("sass", sassTask);
