@@ -1,0 +1,591 @@
+@mixin padding-margin-clear {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin outline($outline-color) {
+    outline: 1px solid $outline-color;
+}
+
+@mixin border($border-color) {
+    border: 1px solid $border-color;
+}
+
+body {
+    width: 100%;
+    @include padding-margin-clear;
+
+    font-family: "PT Sans Narrow", sans-serif;
+    color: #000000;
+
+    background-color: gray;
+}
+
+.ourWorks {
+    position: relative;
+    width: auto;
+    z-index: 10;
+    padding: 54px 0 87px 0;
+
+    box-sizing: border-box;
+    background-color: #f8f5f2;
+}
+
+.ourWorks__wrapper,
+.pricelist__wrapper {
+    margin: 0 10%;
+}
+
+.ourWorks__titleButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ourWorks__title,
+.pricelist__title {
+    @include padding-margin-clear;
+
+    font-size: 40px;
+    font-weight: bold;
+    line-height: normal;
+    color: black;
+    text-transform: uppercase;
+}
+
+.button {
+    display: inline-block;
+    width: 160px;
+    padding: 12px 5px 12px 5px;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include outline (#c9bdb1);
+    border: none;
+    box-sizing: border-box;
+
+    &:focus,
+    &:hover {
+        @include outline (#eae5e2);
+    }
+
+    &:active {
+        @include outline (#ede4de);
+        background-color: #ede4de;
+        color: #e3dcd5;
+    }
+}
+
+.workOfMonth {
+    display: flex;
+    justify-content: flex-start;
+
+    @include border (#c9bdb1);
+}
+
+.workOfMonthPosition {
+    margin: 79px 0 41px 0;
+}
+
+.workOfMonth__img {
+    vertical-align: top;
+}
+
+.workOfMonth__description {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0 0 0 40px;
+}
+
+.workOfMonth__subtitle,
+.ourWorks__subtitle {
+    @include padding-margin-clear;
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.workOfMonth__subtitle {
+    margin: 133px 0 0 0;
+    padding: 0;
+}
+
+.workOfMonth__text,
+.ourWorks__text {
+    @include standard-fs-lh;
+}
+
+.workOfMonth__text {
+    width: 70%;
+    margin: 33px 0 130px 0;
+}
+
+.ourWorks__text {
+    margin-top: 35px;
+}
+
+.workOfMonth__iconsSets,
+.ourWorks__iconsSets {
+    display: flex;
+    margin: auto 0 30px 0;
+    padding: 0;
+}
+
+.workOfMonth__iconSet,
+.ourWorks__iconSet {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.workOfMonth__iconItem,
+.ourWorks__iconItem {
+    margin-right: 15px;
+}
+
+.ourWorks__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ourWorks__item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+}
+
+.ourWorks__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.ourWorks__description {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 34px 0 0 35px;
+
+    @include border (#c9bdb1);
+    border-top: none;
+    box-sizing: border-box;
+}
+
+.workOfMonth__typeofService,
+.ourWorks__typeofService {
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.pricelist {
+    position: relative;
+    width: auto;
+    z-index: 10;
+
+    background-color: #353535;
+}
+
+.pricelistPosition {
+    padding: 77px 0 83px 0;
+}
+
+.wing-pricelist {
+    display: none;
+}
+
+.pricelist__title {
+    color: #ffffff;
+}
+
+.pricelist__timeBlock {
+    display: flex;
+}
+
+.pricelist__table {
+    display: table;
+    flex-grow: 1;
+    margin-right: 60px;
+
+    font-size: 20px;
+    line-height: 27px;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    @include border (#4a4a4a);
+    empty-cells: show;
+}
+
+.pricelist__timeBlockPosition {
+    margin-top: 54px;
+}
+
+.pricelist__table-colgroup {
+    display: table-column-group;
+}
+
+.pricelist__table-col {
+    display: table-column;
+}
+
+.pricelist__table-tbody {
+    display: table-row-group;
+}
+
+.pricelist__table-tr {
+    display: table-row;
+}
+
+.pricelist__table-th {
+    width: 70px;
+    display: table-cell;
+    padding: 15px 0 15px 0;
+
+    text-align: center;
+    opacity: 0.3;
+
+    @include border (#4a4a4a);
+}
+
+.pricelist__table-td {
+    display: table-cell;
+    padding: 15px 0 15px 20px;
+
+    text-align: left;
+
+    @include border (#4a4a4a);
+}
+
+.pricelist__table-td.price {
+    width: 150px;
+}
+
+.pricelist__table,
+.time {
+    color: #ffffff;
+
+    background-color: #353535;
+}
+
+.typeOfService {
+    font-weight: bold;
+}
+
+
+.mobile-only {
+    display: none;
+
+    font-weight: normal;
+}
+
+.time {
+    width: 270px;
+    padding: 35px 0 0 0;
+
+    @include border (#4a4a4a);
+
+    text-align: center;
+}
+
+.time__sales-hours {
+    padding: 0 20%;
+    margin-top: 31px;
+
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1299px) {
+
+    .ourWorks {
+        width: auto;
+    }
+
+    .ourWorks__wrapper,
+    .pricelist__wrapper {
+        margin: 0 64px;
+    }
+
+    .workOfMonthPosition {
+        margin: 49px 0 41px 0;
+    }
+
+    .workOfMonth__description {
+        margin: 0 0 0 50px;
+    }
+
+    .workOfMonth__subtitle {
+        margin: 50px 0 0 0;
+    }
+
+    .workOfMonth__text {
+        width: 80%;
+        margin: 33px 0 130px 0;
+    }
+
+    .workOfMonth__iconsSets,
+    .ourWorks__iconsSets {
+        flex-wrap: wrap;
+    }
+
+    .workOfMonth__iconsSets {
+        margin: auto 0 0 0;
+    }
+
+    .workOfMonth__iconSet,
+    .ourWorks__iconSet {
+        width: 35%;
+        margin: 0 30px 25px 0;
+    }
+
+    .workOfMonth__iconSet:nth-child(1) {
+        margin-left: 12px;
+    }
+
+    .ourWorks__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .ourWorks__item {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ourWorks__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 41px;
+    }
+
+    .ourWorks__description {
+        padding: 44px 0 0 51px;
+
+        @include border (#c9bdb1);
+        border-left: none;
+    }
+
+    .pricelist {
+        width: auto;
+        z-index: 10;
+
+        background-color: #353535;
+    }
+
+    .pricelistPosition {
+        padding: 90px 0 56px 0;
+    }
+
+    .wing-pricelist {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        border-top: 5vw solid #f8f5f2;
+        border-left: 50vw solid transparent;
+        border-right: 50vw solid transparent;
+    }
+
+    .pricelist__table {
+        margin-right: 0;
+    }
+
+    .pricelist__timeBlock {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pricelist__time {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .time {
+        width: auto;
+        margin-top: 9px;
+        padding: 21px 0 21px 27px;
+
+        @include border (#4a4a4a);
+
+        text-align: left;
+    }
+
+    .time__sales-hours {
+        margin: 0 0 0 87px;
+        padding: 0;
+
+        font-size: 30px;
+        line-height: normal;
+        font-weight: bold;
+        align-self: center;
+        text-transform: uppercase;
+        text-align: left;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .ourWorks {
+        width: 320px;
+        padding: 34px 0 34px 0;
+    }
+
+    .ourWorks__wrapper,
+    .pricelist__wrapper {
+        margin: 0 20px;
+    }
+
+    .ourWorks__titleButton {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ourWorks__title,
+    .pricelist__title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .workOfMonth__subtitle {
+        margin-top: 0;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .workOfMonth {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        @include border (#c9bdb1);
+    }
+
+    .workOfMonthPosition {
+        margin: 33px 0 20px 0;
+    }
+
+    .workOfMonth__description {
+        margin: 0 0 0 22px;
+    }
+
+    .workOfMonth__subtitle {
+        margin: 24px 0 0 12px;
+    }
+
+    .workOfMonth__text {
+        width: 90%;
+        margin: 21px 0 23px 12px;
+    }
+
+    .workOfMonth__iconsSets,
+    .ourWorks__iconsSets {
+        flex-wrap: wrap;
+        margin: auto 0 0 0;
+    }
+
+    .workOfMonth__iconSet,
+    .ourWorks__iconSet {
+        width: 35%;
+        margin: 0 30px 25px 0;
+    }
+
+    .workOfMonth__iconSet:nth-child(1) {
+        margin-left: 12px;
+    }
+
+    .ourWorks__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .ourWorks__text {
+        margin-top: 26px;
+    }
+
+    .ourWorks__list {
+        flex-direction: column;
+    }
+
+    .ourWorks__item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .ourWorks__description {
+        padding: 29px 0 0 23px;
+    }
+
+    .pricelist {
+        width: 320px;
+    }
+
+    .pricelistPosition {
+        padding: 70px 0 19px 0;
+    }
+
+    .pricelist__table {
+        margin-right: 0;
+        border: none;
+    }
+
+    .pricelist__table-th,
+    .cell-none {
+        display: none;
+    }
+
+    .typeOfService {
+        text-align: left;
+    }
+
+    .pricelist__table-td {
+        border: none;
+        padding: 15px 0 15px 0;
+    }
+
+    .price {
+        text-align: right;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .pricelist__timeBlockPosition {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .pricelist__time {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .time {
+        margin-top: 30px;
+        padding: 0;
+        width: 280px;
+    }
+
+    .time__img {
+        padding: 21px 0 21px 27px;
+    }
+
+    .time__sales-hours {
+        padding: 0;
+        margin: 0 0 0 35px;
+        align-self: center;
+        text-align: start;
+    }
+}

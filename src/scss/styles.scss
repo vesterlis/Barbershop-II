@@ -59,6 +59,9 @@
   height: $width;
 }
 
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
 body {
   width: 100%;
   @include padding-margin-clear;
@@ -78,8 +81,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 
-  width: 1px;
-  height: 1px;
+  @include same-size(1px);
   margin: -1px;
   padding: 0;
 
@@ -97,6 +99,7 @@ header {
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
+
 }
 
 .wrapperHeader {
@@ -146,8 +149,7 @@ header {
 
     display: inline-block;
 
-    height: 16px;
-    width: 16px;
+    @include same-size(16px);
     margin: 0 19px 0 0;
 
     background-image: url("../img/login-mobile.png");
@@ -197,8 +199,7 @@ header {
     position: absolute;
     top: 62px;
     left: 537px;
-    width: 26px;
-    height: 26px;
+    @include same-size(26px);
 
     border: none;
 
@@ -291,8 +292,7 @@ header {
 
   &__rememberMeCheckbox + label::before {
     content: "";
-    width: 31px;
-    height: 31px;
+    @include same-size(31px);
     flex-shrink: 0;
     flex-grow: 0;
     margin-right: 15px;
@@ -629,8 +629,7 @@ input:focus::placeholder {
   }
 
   &__flagBackground {
-    height: 50px;
-    width: 50px;
+    @include same-size(50px);
 
     margin: 10px 0 0 0;
     padding: 5px 0 0 0;
@@ -779,8 +778,7 @@ input:focus::placeholder {
 
     display: inline-block;
 
-    height: 12px;
-    width: 12px;
+    @include same-size(12px);
 
     background-size: cover;
     background-position: 50% 50%;
@@ -803,8 +801,7 @@ input:focus::placeholder {
 
 .slider__toggle {
   transform: rotate(45deg);
-  width: 20px;
-  height: 20px;
+  @include same-size(20px);
   border: 1px solid #878684;
 
   &:not(:last-child) {
@@ -925,6 +922,12 @@ input:focus::placeholder {
     min-height: 530px;
 
     background-image: url("../img/back-tablet.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)  {
+      background-image: url("../img/back-tablet@2x.jpg");
+      //это ширина картинки в "натуральную" величину 
+      background-size: 1299px auto; 
+    }
   }
 
   .wrapperHeader {

@@ -394,8 +394,8 @@ body {
     text-align: center;
 }
 
-.failurePopUp_text,
-.successPopUp_text {
+.failurePopUp__text,
+.successPopUp__text {
     margin: 0;
     padding: 0;
 
